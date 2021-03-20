@@ -1,12 +1,4 @@
-[windi css]: https://github.com/windicss/windicss
+# Психологическое поле
 
-# Windi CSS Documentation
+Открытое собрание разных карт сознания
 
-This is the documentation website for [Windi CSS].
-
-## Development
-
-```bash
-pnpm i
-pnpm dev
-```
