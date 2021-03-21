@@ -1,7 +1,6 @@
-<template>
-  <ul v-if="items.length > 0" class="sidebar-links">
-    <SideBarLink v-for="item of items" :key="item.text" :item="item" />
-  </ul>
+<template lang="pug">
+ul.sidebar-links(v-if="items.length > 0")
+  SideBarLink(v-for="item of items" :key="item.text" :item="item")
 </template>
 
 <script setup lang="ts">

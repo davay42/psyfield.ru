@@ -8,7 +8,7 @@ header.home-hero(v-if="showHero")
 
       p.m-0.mt-1.text-xl.leading-6.text-center(v-if="hasTagline") {{ tagline }}
 
-      .mt-8
+      .mt-8.text-center
         nav-link.action(v-if="hasAction", :item="{ link: data.actionLink, text: data.actionText }")
         nav-link.action.alt(v-if="hasAltAction", :item="{ link: data.altActionLink, text: data.altActionText }").
 

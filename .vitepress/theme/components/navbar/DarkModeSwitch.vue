@@ -1,8 +1,7 @@
-<template>
-  <button class="icon-button" @click="toggle">
-    <carbon-moon v-show="isDark" />
-    <ion-ios-sunny v-show="!isDark" />
-  </button>
+<template lang="pug">
+button.icon-button(@click="toggle")
+  carbon-moon(v-show="isDark")
+  ion-ios-sunny(v-show="!isDark")
 </template>
 
 <script setup lang='ts'>

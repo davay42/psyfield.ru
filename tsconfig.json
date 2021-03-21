@@ -16,6 +16,7 @@
   "include": [
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
+    "components/**/*.vue",
   ],
   "exclude": [
     "**/dist/**"
