@@ -147,11 +147,11 @@
 
 </script>
 
-<style lang="stylus" scoped>
-th
-  @apply sticky left-0 text-right font-bold bg-white text-sm
-
-tr:nth-child(2n) th
-  @apply bg-gray-50;
-
+<style lang="postcss" scoped>
+th {
+  @apply sticky left-0 text-right font-bold bg-white text-sm dark:bg-warm-gray-700;
+}
+tr:nth-child(2n) th {
+  @apply bg-gray-50 dark:bg-warm-gray-600;
+}
 </style>
