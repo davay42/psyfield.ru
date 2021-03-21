@@ -14,8 +14,10 @@
   },
   "devDependencies": {
     "@iconify/json": "^1.1.319",
+    "@rollup/plugin-alias": "^3.1.2",
     "@types/node": "^14.14.35",
     "esbuild-register": "^2.3.0",
+    "markdown-it-classy": "^0.2.0",
     "pug": "3.0.2",
     "stylus": "^0.54.8",
     "typescript": "^4.2.3",
@@ -24,7 +26,7 @@
     "vite-plugin-icons": "^0.3.2",
     "vite-plugin-restart": "^0.0.1",
     "vite-plugin-windicss": "^0.9.4",
-    "windicss": "^2.5.3",
-    "vitepress": "^0.12.2"
+    "vitepress": "^0.12.2",
+    "windicss": "^2.5.3"
   }
 }

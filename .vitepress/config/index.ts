@@ -7,8 +7,14 @@ import themeConfig from './theme'
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
   description: metaData.description,
+  lang: 'ru-RU',
   head,
   themeConfig,
+  markdown: {
+    config: (md) => {
+      md.use(require('markdown-it-classy'))
+    }
+  }
 }
 
 export default config

@@ -19,12 +19,13 @@ export default defineConfig({
         }),
       ],
     }),
+
     Icons({
       defaultStyle: 'vertical-align: middle;',
     }),
     WindiCSS({
       scan: {
-        dirs: ['.vitepress'],
+        dirs: ['.vitepress', 'components'],
         include: ['index.md'],
         exclude: ['**/examples/**/*'],
         fileExtensions: ['vue', 'ts'],

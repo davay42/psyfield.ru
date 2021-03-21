@@ -71,14 +71,14 @@
 }
 
 html.dark {
-  --c-bg: #171717;
+  --c-bg: hsla(30, 2%, 15%, 1);
   --c-bg-semi: rgba(17, 17, 17, 0.8);
   --c-bg-secondary: #222;
 
   --c-scrollbar: #333;
   --c-scrollbar-bg: #212121;
 
-  --c-text: #f5f7fa;
+  --c-text: #ddd;
   --c-text-light: #ffffff;
   --c-text-lighter: theme('colors.gray.300');
 
