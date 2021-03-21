@@ -3,13 +3,13 @@ import { sidebar } from './sidebar'
 import { nav } from './nav'
 
 const themeConfig: DefaultTheme.Config = {
-  repo: 'DeFUCC/psy-press',
+  repo: 'DeFUCC/psyfield.ru',
   logo: '/assets/s-exp.svg',
   docsDir: '.',
-  docsBranch: 'main',
-  docsRepo: 'DeFUCC/psy-press',
+  docsBranch: 'master',
+  docsRepo: 'DeFUCC/psyfield.ru',
   editLinks: true,
-  editLinkText: 'Предложите изменения',
+  editLinkText: 'Дополнить / поправить',
   nav,
   sidebar,
 }

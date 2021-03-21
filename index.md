@@ -4,11 +4,11 @@ home: true
 title: 'Поле'
 
 heroText: Психологическое поле
-tagline: Открытое собрание разных карт сознания
-actionText: Изучать карты
+tagline: Открытое собрание карт сознания
+actionText: Войти
 actionLink: /field/
 
-altActionText: Поддержать проект
+altActionText: Поддержать
 altActionLink: /support
 
 heroImage: /assets/logo-color.svg
