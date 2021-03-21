@@ -5,16 +5,17 @@
 ## Жизненная энергия
 
 <Energy />
-
+<Spacer />
 
 ## Локус внимания
 
 <Attention />
-
+<Spacer />
 
 ## 4 темперамента
 
 <Temperaments />
+<Spacer />
 
 ## 3 вида травмы
 
@@ -24,8 +25,11 @@
 
 ### Системные отношения
 
+<Spacer />
+
 
 ![](./square12.svg)
+<Spacer />
 
 ![](./circle12.svg)
 
