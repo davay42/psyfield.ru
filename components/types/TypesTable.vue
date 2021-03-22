@@ -1,5 +1,5 @@
 <template lang="pug">
-.max-w-full.overflow-x-scroll
+.max-w-full.max-h-screen.overflow-x-scroll
   table
     tbody
       tr.text-center
@@ -16,8 +16,8 @@
         td(:colspan="4") 
           strong Я и ты  
           span (системные отношения)
-
-      tr.font-bold.text-lg
+      
+      tr.font-bold.text-lg.sticky.top-0.z-10
         th Название
 
         td.bg-light-blue-300(class="dark:bg-blue-900") Наблюдатель

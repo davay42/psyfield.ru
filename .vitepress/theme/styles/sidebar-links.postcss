@@ -105,12 +105,46 @@ a.sidebar-link-item.active {
   > .sidebar-link
   > .sidebar-links
   > .sidebar-link
+  > .sidebar-link-item::before {
+  content: '•';
+  font-size: 1.2em;
+  margin-top: -2px;
+  position: absolute;
+  margin-left: -0.9rem;
+  opacity: 0.4;
+}
+
+.sidebar
+  > .sidebar-links
+  > .sidebar-link
+  > .sidebar-links
+  > .sidebar-link
+  > .sidebar-links
+  > .sidebar-link
   > .sidebar-links
   > .sidebar-link
   > .sidebar-link-item {
   display: block;
-  padding: 0.3rem 1.5rem 0.3rem 4rem;
+  padding: 0.3rem 0.5rem 0.3rem 2.4rem;
   line-height: 1.4;
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+.sidebar
+  > .sidebar-links
+  > .sidebar-link
+  > .sidebar-links
+  > .sidebar-link
+  > .sidebar-links
+  > .sidebar-link
+  > .sidebar-links
+  > .sidebar-link
+  > .sidebar-link-item::before {
+  content: '—';
+  font-size: 1.2em;
+  margin-top: -2px;
+  position: absolute;
+  margin-left: -1em;
+  opacity: 0.4;
 }

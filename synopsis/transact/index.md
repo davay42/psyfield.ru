@@ -482,12 +482,12 @@
 
 ## Источники
 
-- <a href="people-play.pdf">Люди, которые играют в игры. Психология человеческой судьбы</a> / пер. с англ. А. А. Грузберга; терминологическая правка В. Данченка — К.: PSYLIB, 2004.
+- <a href="/books/people-play.pdf">Люди, которые играют в игры. Психология человеческой судьбы</a> / пер. с англ. А. А. Грузберга; терминологическая правка В. Данченка — К.: PSYLIB, 2004.
 
-- <a href="games-people.pdf">Игры, в которые играют люди</a> / Пер. с англ., предисловие и примечания А. И. Фета. — Nyköping (Sweden): Philosophical arkiv, 2016. — 164 с. — ISBN 978-91-983073-2-0.
+- <a href="/books/games-people.pdf">Игры, в которые играют люди</a> / Пер. с англ., предисловие и примечания А. И. Фета. — Nyköping (Sweden): Philosophical arkiv, 2016. — 164 с. — ISBN 978-91-983073-2-0.
 
-- <a href="scenarios_lives.pdf">Сценарии жизни людей. Школа Эрика Берна</a>, Клод Штайнер  / пер. с англ. Е. М. Клиориной. — СПб : Питер, 2003.
+- <a href="/books/scenarios_lives.pdf">Сценарии жизни людей. Школа Эрика Берна</a>, Клод Штайнер  / пер. с англ. Е. М. Клиориной. — СПб : Питер, 2003.
 
 - [Выход из треугольника Карпмана](https://econet.ru/articles/111168-vyhod-iz-treugolnika-karpmana), Юлия Головкина
 
-- <a href="thenewdramatriangles.pdf">The New Drama Triangles</a> (англ.). [Karpmandramatriangle.com](https://karpmandramatriangle.com/)
+- <a href="/books/thenewdramatriangles.pdf">The New Drama Triangles</a> (англ.). [Karpmandramatriangle.com](https://karpmandramatriangle.com/)

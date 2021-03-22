@@ -12,7 +12,8 @@ const config: UserConfig<DefaultTheme.Config> = {
   themeConfig,
   markdown: {
     config: (md) => {
-      md.use(require('markdown-it-classy'))
+      md.use(require('markdown-it-classy'));
+      md.use(require('markdown-it-container'), 'card')
     }
   }
 }

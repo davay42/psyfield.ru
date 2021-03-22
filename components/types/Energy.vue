@@ -1,5 +1,5 @@
 <template lang="pug">
-.grid.grid-cols-1.my-10.gap-4
+.grid.grid-cols-1.mt-10.gap-4
   .cell.bg-orange-100(class="dark:bg-orange-800")
     h4 Активный
     h5 Влияющий

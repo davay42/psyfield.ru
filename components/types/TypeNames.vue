@@ -1,15 +1,15 @@
 <template lang="pug">
 .grid.grid-cols-1.gap-4.my-10(class="xs:grid-cols-2", v-if="level == 1")
-  .cell.bg-pink-300(class="dark:bg-pink-900")
+  .cell.bg-pink-300(class="dark:bg-pink-700")
     h4 Властелин
     h5 Психопатический
-  .cell.bg-amber-300(class="dark:bg-amber-900") 
+  .cell.bg-amber-300(class="dark:bg-amber-700") 
     h4 Звезда
     h5 Истероидный
-  .cell.bg-light-blue-300(class="dark:bg-blue-900") 
+  .cell.bg-light-blue-300(class="dark:bg-blue-700") 
     h4 Наблюдатель
     h5 Аутичный
-  .cell.bg-green-300(class="dark:bg-green-900")
+  .cell.bg-green-300(class="dark:bg-green-700")
     h4 Эстет
     h5 Эпилептоидный
 
@@ -28,16 +28,16 @@
     h5 Депрессивный
 
 .grid.grid-cols-1.gap-4.my-10(class="xs:grid-cols-2", v-if="level == 3")
-  .cell.bg-pink-100(class="dark:bg-pink-700")
+  .cell.bg-pink-100(class="dark:bg-pink-900")
     h4 Идеолог
     h5 Шизоидный
-  .cell.bg-amber-100(class="dark:bg-amber-700") 
+  .cell.bg-amber-100(class="dark:bg-amber-900") 
     h4 Революционер
     h5 Симбиотический
-  .cell.bg-light-blue-100(class="dark:bg-blue-700") 
+  .cell.bg-light-blue-100(class="dark:bg-blue-900") 
     h4 Детектив
     h5 Параноидальный
-  .cell.bg-green-100(class="dark:bg-green-700")
+  .cell.bg-green-100(class="dark:bg-green-900")
     h4 Философ
     h5 Избегающий
 </template>
