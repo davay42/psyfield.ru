@@ -24,7 +24,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'Конспекты',
       children: [
         { text: 'Транзактный анализ', link: '/synopsis/transact/'},
-        { text: 'Нейрологические уровни', link: '/synopsis/neurolevels/'},
+        { text: 'Нейролингвистическое программирование', link: '/synopsis/nlp/'},
       ],
     },
 
