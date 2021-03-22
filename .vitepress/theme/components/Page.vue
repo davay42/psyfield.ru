@@ -13,7 +13,7 @@ main.main
 
 <style lang="postcss" scoped>
 .main {
-  @apply px-4 pb-16 pt-1 w-screen container max-w-sm mx-auto
+  @apply px-4 pb-16 pt-1 container max-w-sm mx-auto
   md:(px-8);
 }
 
@@ -23,7 +23,7 @@ main.main
 }
 
 .content.cards {
-  @apply max-w-75ch mx-auto -mx-4 sm:mx-auto;
+  @apply max-w-65ch mx-auto;
 }
 
 

@@ -49,8 +49,8 @@
  * that value.
  * --------------------------------------------------------------------- */
 
-  --z-index-navbar: 10;
-  --z-index-sidebar: 6;
+  --z-index-navbar: 100;
+  --z-index-sidebar: 60;
 
   /**
  * Shadows
