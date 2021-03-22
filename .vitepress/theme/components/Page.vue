@@ -23,7 +23,7 @@ main.main
 }
 
 .content.cards {
-  @apply max-w-75ch mx-auto -mx-4;
+  @apply max-w-75ch mx-auto -mx-4 sm:mx-auto;
 }
 
 

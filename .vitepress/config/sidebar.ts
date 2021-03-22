@@ -13,6 +13,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: 'Карточки',
       children: [
+        { text: 'Транзактный анализ', link: '/cards/transact/'},
         { text: 'Психотипическая адаптация личности', link: '/cards/types/'},
       ],
     },
