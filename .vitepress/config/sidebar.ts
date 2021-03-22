@@ -15,7 +15,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       children: [
         { text: 'Психотипическая адаптация личности', link: '/cards/types/'},
         { text: 'Транзактный анализ', link: '/cards/transact/'},
-
+        { text: 'Нейролингвистическое программирование', link: '/cards/nlp/'},
+        { text: 'Психоалхимия', link: '/cards/alchemy/'},
       ],
     },
 
@@ -23,6 +24,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: 'Конспекты',
       children: [
         { text: 'Транзактный анализ', link: '/synopsis/transact/'},
+        { text: 'Нейрологические уровни', link: '/synopsis/neurolevels/'},
       ],
     },
 

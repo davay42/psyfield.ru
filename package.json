@@ -26,8 +26,8 @@
     "vite-plugin-components": "^0.8.3",
     "vite-plugin-icons": "^0.3.2",
     "vite-plugin-restart": "^0.0.1",
-    "vite-plugin-windicss": "^0.9.5",
+    "vite-plugin-windicss": "^0.9.6",
     "vitepress": "^0.12.2",
-    "windicss": "^2.5.3"
+    "windicss": "^2.5.4"
   }
 }

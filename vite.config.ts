@@ -10,6 +10,7 @@ export default defineConfig({
       dirs: [
         '.vitepress/theme/components',
         'components',
+        'cards',
       ],
       extensions: ['vue', 'ts'],
       customLoaderMatcher: id => id.endsWith('.md'),
@@ -25,7 +26,7 @@ export default defineConfig({
     }),
     WindiCSS({
       scan: {
-        dirs: ['.vitepress', 'components'],
+        dirs: ['.vitepress', 'components', 'cards'],
         include: ['index.md'],
         exclude: ['**/examples/**/*'],
         fileExtensions: ['vue', 'ts'],
