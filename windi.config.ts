@@ -22,8 +22,8 @@ export default defineConfig({
       },
       backgroundColor: {
         ...chromaticColors(12),
-        ...chromaticColors(9),
         ...chromaticColors(7),
+        ...chromaticColors(6),
         ...chromaticColors(5),
         ...chromaticColors(4),
         ...chromaticColors(3),
@@ -42,7 +42,7 @@ export default defineConfig({
 
 function chromaticColors(n:number) {
   let colors = {}
-  for (let i=0;i<n;i++) {
+    for (let i=0;i<n;i++) {
     colors['ch-'+n+'-'+i] = `hsla(${i*(360/n)}, 60%, 80%, 1)`
     colors['ch-'+n+'-'+i+'d'] = `hsla(${i*(360/n)}, 60%, 20%, 1)`
   }
