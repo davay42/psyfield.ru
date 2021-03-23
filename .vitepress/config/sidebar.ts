@@ -16,6 +16,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'Психотипическая адаптация личности', link: '/cards/types/'},
         { text: 'Транзактный анализ', link: '/cards/transact/'},
         { text: 'Нейролингвистическое программирование', link: '/cards/nlp/'},
+        { text: 'Спиральная динамика', link: '/cards/spiral/'},
         { text: 'Психоалхимия', link: '/cards/alchemy/'},
       ],
     },
@@ -31,8 +32,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: 'О проекте',
       children: [
-        { text: 'Контакты', link: '/contact' },
-        { text: 'Поддержать', link: '/support' },
+        { text: 'Авторы', link: '/authors' },
+        { text: 'Благодарность', link: '/support' },
       ],
     },
   ],
