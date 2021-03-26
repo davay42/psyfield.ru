@@ -1,24 +1,18 @@
-<template>
-  <div v-if="hasLinks" class="next-and-prev-link">
-    <div class="container">
-      <div class="prev">
-        <a v-if="prev" class="link" :href="$withBase(prev.link)">
-          <carbon-arrow-left class="icon icon-prev" />
-          <span class="text">{{ prev.text }}</span>
-        </a>
-      </div>
-      <div class="next">
-        <a v-if="next" class="link" :href="$withBase(next.link)">
-          <span class="text">{{ next.text }}</span>
-          <carbon-arrow-right class="icon icon-next" />
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.next-and-prev-link(v-if="hasLinks")
+  .container
+    .prev
+      a.link(v-if="prev" :href="$withBase(prev.link)")
+        carbon-arrow-left.icon.icon-prev
+        span.text {{ prev.text }}
+    .next
+      a.link(v-if="next" :href="$withBase(next.link)")
+        span.text {{ next.text }}
+        carbon-arrow-right.icon.icon-next
 </template>
 
 <script setup lang="ts">
-import { useNextAndPrevLinks } from '../composables/nextAndPrevLinks'
+import { useNextAndPrevLinks } from '../../composables/nextAndPrevLinks'
 
 const { hasLinks, prev, next } = useNextAndPrevLinks()
 </script>

@@ -5,7 +5,7 @@
 ::: card
 ## Ценностные мемы
 
-<Spiral />
+<spiral-levels />
 :::
 
 

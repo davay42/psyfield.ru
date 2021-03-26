@@ -1,16 +1,12 @@
-<template>
-  <div class="theme" :class="pageClasses">
-    <NavBar v-if="showNavbar" @toggle="toggleSidebar" />
-    <div class="pt-$header-height min-h-screen" :class="{'grid-layout': !enableHome }">
-      <SideBar :open="openSideBar" />
-      <div class="sidebar-mask" @click="toggleSidebar(false)" />
-      <Home v-if="enableHome" />
-      <Page v-else>
-      </Page>
-    </div>
-  </div>
-
-  <Debug />
+<template lang="pug">
+.theme(:class="pageClasses")
+  nav-bar(v-if="showNavbar" @toggle="toggleSidebar")
+  div(class="pt-$header-height min-h-screen" :class="{'grid-layout': !enableHome }")
+    sidebar(:open="openSideBar")
+    .sidebar-mask(@click="toggleSidebar(false)")
+    home(v-if="enableHome")
+    page(v-else)
+Debug
 </template>
 
 <script setup lang="ts">

@@ -1,10 +1,9 @@
 <template lang="pug">
 aside(class="h-auto border-r-1px border-$c-divider")
   .sidebar(:class="{ open }")
-    NavLinks.nav
-    slot(name="sidebar-top")
-    SideBarLinks
-    slot(name="sidebar-bottom")
+    nav-links.nav
+    sidebar-links
+
 </template>
 
 <script setup lang="ts">

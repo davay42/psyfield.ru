@@ -1,13 +1,10 @@
-<template>
-  <footer class="page-footer">
-    <EditLink />
-    <LastUpdated />
-  </footer>
+<template lang="pug">
+footer.page-footer
+  page-edit-link
+  page-last-updated
 </template>
 
 <script setup lang="ts">
-import EditLink from './EditLink.vue'
-import LastUpdated from './LastUpdated.vue'
 </script>
 
 <style scoped lang="postcss">

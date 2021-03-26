@@ -1,17 +1,17 @@
 <template lang="pug">
 header.nav-bar
-  ToggleSideBarButton(@toggle="$emit('toggle')")
-  NavBarTitle
+  nav-toggle-sidebar(@toggle="$emit('toggle')")
+  nav-bar-title
   div(class="hidden lg:flex px-3 ml-4 lg:ml-10")
-    NavLinks
+    nav-links
   .flex-grow
-  DarkModeSwitch
+  nav-dark-mode
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { defineEmit } from 'vue'
 
-defineEmit(['toggle'])
+defineEmit(['toggle']);
 </script>
 
 <style scoped lang="postcss">

@@ -9,10 +9,11 @@ export default defineConfig({
     Components({
       dirs: [
         '.vitepress/theme/components',
-        'components',
         'cards',
       ],
       extensions: ['vue', 'ts'],
+      directoryAsNamespace: true,
+      globalNamespaces: ['global'],
       customLoaderMatcher: id => id.endsWith('.md'),
       customComponentResolvers: [
         ViteIconsResolver({

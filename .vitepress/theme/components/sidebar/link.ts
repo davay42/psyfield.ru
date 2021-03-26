@@ -88,3 +88,6 @@ function mapHeaders(headers: HeaderWithChildren[]): DefaultTheme.SideBarItem[] {
     children: header.children ? mapHeaders(header.children) : undefined,
   }))
 }
+
+
+export default SideBarLink

@@ -1,15 +1,13 @@
-<template>
-  <div class="nav-link">
-    <a class="item" v-bind="linkProps">
-      {{ item.text }}
-    </a>
-  </div>
+<template lang="pug">
+.nav-link
+  a.item(v-bind="linkProps")
+    | {{ item.text }}
 </template>
 
 <script setup lang="ts">
 import { defineProps, toRefs } from 'vue'
-import type { DefaultTheme } from '../config'
-import { useNavLink } from '../composables/navLink'
+import type { DefaultTheme } from '../../config'
+import { useNavLink } from '../../composables/navLink'
 
 const props = defineProps<{
   item: DefaultTheme.NavItemWithLink
