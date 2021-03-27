@@ -1,18 +1,19 @@
 <template lang="pug">
 .flex.flex-col.mt-12
-  .flex.flex-wrap.mb-12.shadow-md(v-for="(level) in levels", :key="level.title")
+  .flex.flex-wrap.mb-12.shadow-md(v-for="(level) in lev", :key="level.title")
     .p-4.flex-0.w-full(class="sm:w-180px", :style="{backgroundColor: level.color}") 
       .font-bold.text-xl.mb-4 {{level.title}} 
       .font-bold {{level.purpose}}
-      .mt-4 {{level?.subject}}: «{{level?.motto}}»
+      .mt-4 
+        span.font-bold {{level?.subject}}: 
+        span «{{level?.motto}}»
     .p-4.flex-1.flex.flex-col.bg-warm-gray-50(class="dark:bg-warm-gray-700")
-      .flex.mb-2.items-center(v-for="challenge in level.challenges", :key="challenge")
-        .p-1  {{ challenge }} 
+      .flex.flex-1.mb-2.items-center.py-1(v-for="challenge in level.challenges", :key="challenge") {{ challenge }} 
 </template>
 
 <script lang="ts" setup>
 
-const levels = [
+const lev = [
   {
     title: 'Бежевый',
     color: 'hsla(40, 40%, 50%, 0.5)',
