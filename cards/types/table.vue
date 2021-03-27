@@ -16,6 +16,24 @@
         td(:colspan="4") 
           strong Я и ты  
           span (системные отношения)
+
+      tr.font-bold.text-2xl
+        th Иконка
+
+        td 👀
+        td 👑
+        td 💫
+        td 🏺
+        td
+        td 🧰
+        td 📇
+        td 🎀  
+        td 🛎
+        td
+        td 🛸
+        td 🚀
+        td ✊
+        td 💎
       
       tr.font-bold.text-lg.sticky.top-0.z-2
         th Название
