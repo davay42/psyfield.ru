@@ -7,16 +7,16 @@
     "serve": "vitepress serve"
   },
   "dependencies": {
-    "@vueuse/core": "^4.6.1",
+    "@vueuse/core": "^4.6.2",
     "change-case": "^4.1.2",
     "json5": "^2.2.0",
     "paper": "^0.12.15",
-    "vue": "^3.0.7"
+    "vue": "^3.0.9"
   },
   "devDependencies": {
     "@iconify/json": "^1.1.322",
     "@rollup/plugin-alias": "^3.1.2",
-    "@types/node": "^14.14.36",
+    "@types/node": "^14.14.37",
     "esbuild-register": "^2.3.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^3.0.0",
@@ -27,8 +27,8 @@
     "vite-plugin-components": "^0.8.3",
     "vite-plugin-icons": "^0.4.0",
     "vite-plugin-restart": "^0.0.1",
-    "vite-plugin-windicss": "^0.10.2",
+    "vite-plugin-windicss": "^0.10.4",
     "vitepress": "^0.12.2",
-    "windicss": "^2.5.5"
+    "windicss": "^2.5.7"
   }
 }
