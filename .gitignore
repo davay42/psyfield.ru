@@ -49,3 +49,4 @@ wiki/
 
 # Algolia
 .algolia.env
+package.json
