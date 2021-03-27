@@ -10,6 +10,7 @@
     "@vueuse/core": "^4.6.1",
     "change-case": "^4.1.2",
     "json5": "^2.2.0",
+    "paper": "^0.12.15",
     "vue": "^3.0.7"
   },
   "devDependencies": {

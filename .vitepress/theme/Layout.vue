@@ -6,7 +6,6 @@
     .sidebar-mask(@click="toggleSidebar(false)")
     home(v-if="enableHome")
     page(v-else)
-Debug
 </template>
 
 <script setup lang="ts">

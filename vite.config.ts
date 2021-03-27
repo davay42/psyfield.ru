@@ -10,6 +10,7 @@ export default defineConfig({
       dirs: [
         '.vitepress/theme/components',
         'cards',
+        'components'
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
