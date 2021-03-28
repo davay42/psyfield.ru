@@ -1,5 +1,16 @@
 <template lang="pug">
 .flex.flex-col.mt-12
+  .mb-8
+    .text-lg.font-bold Условные обозначения:
+    .flex.items-center.p-2
+      la-eye.text-2xl.mr-2
+      span Направление внимания
+    .flex.items-center.p-2
+      la-compress.text-2xl.mr-2
+      span Внутренний фокус
+    .flex.items-center.p-2
+      la-expand.text-2xl.mr-2
+      span Внешний фокус
   .flex.flex-wrap.mb-12.shadow-md(v-for="(level,i) in levels", :key="level.title")
     .p-4.flex-0.w-full(class="sm:w-180px",:style="levelColor(i,levels.length, true, '60%')") 
       la-globe.icon(v-if="i==0")

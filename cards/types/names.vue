@@ -23,7 +23,7 @@
     h4 Законодатель
     h5 Маниакальный
   .cell.bg-amber-200(class="dark:bg-amber-800") 
-    .text-4xl 🎀  
+    .text-4xl 🛍
     h4 Принц
     h5 Нарциссичный
   .cell.bg-light-blue-200(class="dark:bg-blue-800")
