@@ -24,7 +24,7 @@ function setPolys() {
     name:'poly'
   })
 
-  for (let i=0; i<5; i++) {
+  for (let i=0; i<7; i++) {
     let poly = new paper.Path.RegularPolygon({
       order:i,
       applyMatrix:false,
@@ -40,7 +40,11 @@ function setPolys() {
         lightness: 0.5,
         alpha: 1,
       },
+    })
 
+    poly.on('frame', ()=> {
+      let sign = i%2 -0.5
+      poly.rotate(0.01*(i+3)*sign)
     })
  
     polys.push(poly)
@@ -57,7 +61,7 @@ function toss() {
         y:Math.random()*h/2+h/4,
       },
       'rotation': Math.random()*180,
-      'bounds.size':Math.random()*w/2+w/8,
+      'bounds.size':Math.random()*w/3+20,
       'fillColor.hue': (index+i)*(360/polys.length)
     }, {
       duration: 1000,
