@@ -1,5 +1,5 @@
 <template lang="pug">
-.row
+.my-8.flex
   .text-4xl.mr-4 {{ emotion?.icon }}
   .info
     .text-lg.font-bold.mb-2 {{ emotion?.title }}
@@ -24,9 +24,6 @@ const props = defineProps({
 </script>
 
 <style lang="postcss" scoped>
-.row {
-  @apply my-4 flex;
-}
 .q {
   @apply mb-2;
 }

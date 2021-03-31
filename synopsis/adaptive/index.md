@@ -186,3 +186,7 @@
 Гнев + Доверие = ДОМИНИРОВАНИЕ
 
 Эмоциональный ноль = ПОКОЙ
+
+## Источники
+
+[psychojournal.ru](https://psychojournal.ru/article/145-adaptacionnaya-teoriya-emociy-roberta-plutchika.html)
