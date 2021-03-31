@@ -18,6 +18,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'Позитивная психология', link: '/cards/positive/'},
         { text: 'Нейролингвистическое программирование', link: '/cards/nlp/'},
         { text: 'Спиральная динамика', link: '/cards/spiral/'},
+        { text: 'Адаптационная теория эмоций', link: '/cards/adaptive/'},
         { text: 'Психоалхимия', link: '/cards/alchemy/'},
       ],
     },
@@ -28,6 +29,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'Транзактный анализ', link: '/synopsis/transact/'},
         { text: 'Позитивная психология', link: '/synopsis/positive/'},
         { text: 'Нейролингвистическое программирование', link: '/synopsis/nlp/'},
+        { text: 'Адаптационная теория эмоций', link: '/synopsis/adaptive/'},
       ],
     },
 
