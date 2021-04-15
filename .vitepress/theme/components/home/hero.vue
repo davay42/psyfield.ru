@@ -9,9 +9,8 @@ header.home-hero(v-if="showHero")
       p.m-0.mt-1.text-xl.leading-6.text-center(v-if="hasTagline") {{ tagline }}
 
       .mt-8.text-center
-        nav-link.action(v-if="hasAction", :item="{ link: data.actionLink, text: data.actionText }")
-        nav-link.action.alt(v-if="hasAltAction", :item="{ link: data.altActionLink, text: data.altActionText }").
-
+        a.action(v-if="hasAction", :href="data.actionLink") {{ data.actionText }}
+        a.action.alt(v-if="hasAltAction", :href="data.altActionLink") {{ data.altActionText }}
 </template>
 
 <script setup lang="ts">
@@ -56,7 +55,7 @@ const hasAltAction = computed(
   @apply inline-block mx-2;
 }
 
-.action :deep(.item) {
+.action {
   @apply rounded-lg
     inline-block px-4 py-2.5
     text-lg text-white
@@ -64,15 +63,15 @@ const hasAltAction = computed(
     xs:(text-xl px-5 py-2.8);
 }
 
-.action.alt :deep(.item) {
+.action.alt {
   @apply bg-transparent text-$c-brand;
 }
 
-.action.alt :deep(.item:hover) {
+.action.alt:hover {
   @apply text-$c-brand-light bg-transparent border-$c-brand-light;
 }
 
-.action :deep(.item:hover) {
+.action:hover {
   @apply no-underline bg-$c-brand-light border-$c-brand-light;
 }
 </style>
