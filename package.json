@@ -15,9 +15,9 @@
     "vue": "^3.0.11"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.329",
+    "@iconify/json": "^1.1.330",
     "@rollup/plugin-alias": "^3.1.2",
-    "@types/node": "^14.14.37",
+    "@types/node": "^14.14.41",
     "esbuild-register": "^2.4.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^3.0.0",
@@ -28,7 +28,7 @@
     "vite-plugin-components": "^0.8.3",
     "vite-plugin-icons": "^0.5.0",
     "vite-plugin-restart": "^0.0.2",
-    "vite-plugin-windicss": "^0.14.0",
+    "vite-plugin-windicss": "^0.14.5",
     "vitepress": "^0.13.0",
     "windicss": "^2.5.14"
   }
