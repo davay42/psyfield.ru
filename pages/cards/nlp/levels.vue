@@ -11,7 +11,7 @@
     .flex.items-center.p-2
       la-expand.text-2xl.mr-2
       span Внешний фокус
-  .flex.flex-wrap.mb-12.shadow-md(v-for="(level,i) in levels", :key="level.title")
+  .flex.flex-wrap.mb-12.shadow-md(v-for="(level,i) in levels", :key="level.title",v-motion-slide-top)
     .p-4.flex-0.w-full(class="sm:w-180px",:style="levelColor(i,levels.length, true, '60%')") 
       la-globe.icon(v-if="i==0")
       la-user.icon(v-if="i==1")
