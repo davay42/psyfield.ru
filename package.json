@@ -1,7 +1,7 @@
 {
   "private": true,
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "scripts": {
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
