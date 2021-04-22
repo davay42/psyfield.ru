@@ -22,7 +22,6 @@ export default defineConfig({
         }),
       ],
     }),
-
     Icons({
       defaultStyle: 'vertical-align: middle;',
     }),

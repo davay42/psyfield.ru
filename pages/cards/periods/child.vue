@@ -1,8 +1,11 @@
 <template lang="pug">
 .flex.flex-col
-  .flex.flex-col(v-for="epoch in $frontmatter.epochs")  
-    h1.text-2xl.font-bold {{ epoch.title }}
-    .flex.flex-col.py-4(v-for="period in epoch.periods") 
+  .flex.flex-col.my-4(v-for="(epoch, i) in $frontmatter.epochs" ) 
+    .flex.items-center.font-bold.mb-2
+      .text-2xl {{ epoch.title }}
+      .flex-auto
+      .text-lg {{ epoch.age }}
+    .flex.flex-col.p-4.my-4(v-for="(period, j) in epoch.periods", :style="levelColor(i * 2 + j, 6)") 
       .text-xl.flex.py-4
         .font-bold {{ period.title }} 
         .flex-auto
@@ -16,6 +19,9 @@
       .row
         .title Новообразование
         .data {{ period.new }}
+      .row
+        .title Кризис
+        .data(v-html="period.crysis") 
 </template>
 
 <script setup>
@@ -26,11 +32,12 @@ function levelColor(
   reverse = false,
   s = '50%',
   l = '50%',
-  a = '0.5'
+  a = '0.2'
 ) {
   if (reverse) {
     i = n - i - 1
   }
+  console.log(i, n)
   return {
     backgroundColor: `hsla(${i * (360 / n)}, ${s}, ${l}, ${a})`
   }
@@ -44,7 +51,7 @@ function levelColor(
 }
 
 .title {
-  @apply font-bold;
+  @apply font-bold mb-2 border-b border-gray-500 border-opacity-50;
 }
 
 .data {
