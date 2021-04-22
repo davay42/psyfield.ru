@@ -32,7 +32,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'Позитивная психология', link: '/synopsis/positive/'},
         { text: 'Нейролингвистическое программирование', link: '/synopsis/nlp/'},
         { text: 'Периодизация психологического развития', link: '/synopsis/periods/'},
-        { text: 'Интегральный подход', link: '/cards/integral/'},
+        { text: 'Интегральный подход', link: '/synopsis/integral/'},
         { text: 'Адаптационная теория эмоций', link: '/synopsis/adaptive/'},
       ],
     },
