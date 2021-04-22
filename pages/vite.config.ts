@@ -40,12 +40,16 @@ export default defineConfig({
   optimizeDeps: {
     include: [
       'vue',
-      'json5',
       '@vueuse/core',
-      'change-case',
-    ],
-    exclude: [
-      'vue-demi',
     ],
   },
+  build: {
+    rollupOptions:{
+      output:{
+        manualChunks: {
+          motion: ['@vueuse/motion']
+        }
+      }
+    }
+  }
 })

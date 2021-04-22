@@ -14,10 +14,7 @@
     "allowJs": true
   },
   "include": [
-    ".vitepress/**/*.ts",
-    ".vitepress/**/*.vue",
-    "components/**/*.vue",
-    "cards/**/*.vue",
+    "pages/.vitepress/**/*.ts",
   ],
   "exclude": [
     "**/dist/**"
