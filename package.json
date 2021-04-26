@@ -3,11 +3,11 @@
   "version": "2.0.0",
   "name": "psyfield.ru",
   "repository": "https://github.com/davay42/psyfield.ru",
+  "private": true,
   "scripts": {
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
-    "serve": "vitepress serve pages",
-    "publish": "pnpm bs --no-git-checks --directory /pages/.vitepress/dist/ "
+    "serve": "vitepress serve pages"
   },
   "dependencies": {
     "@vueuse/core": "^4.8.4",
@@ -23,7 +23,6 @@
     "@rollup/plugin-alias": "^3.1.2",
     "@types/javascript-time-ago": "^2.0.2",
     "@types/node": "^14.14.41",
-    "branchsite": "^4.0.3",
     "esbuild-register": "^2.5.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^3.0.0",
