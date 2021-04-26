@@ -25,6 +25,7 @@ specifiers:
   vite-plugin-restart: ^0.0.2
   vite-plugin-windicss: ^0.14.6
   vitepress: ^0.13.0
+  vitepress-tags: ^0.2.4
   vue: ^3.0.11
   windicss: ^2.5.14
 
@@ -56,6 +57,7 @@ devDependencies:
   vite-plugin-restart: 0.0.2_vite@2.2.1
   vite-plugin-windicss: 0.14.6_vite@2.2.1
   vitepress: 0.13.0
+  vitepress-tags: 0.2.4
   windicss: 2.5.14
 
 packages:
@@ -487,6 +489,11 @@ packages:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.2.3
+    dev: true
+
+  /app-root-path/3.0.0:
+    resolution: {integrity: sha512-qMcx+Gy2UZynHjOHOIXPNvpf+9cjvk3cWrBBK7zg4gH9+clobJRb9NGzcT7mQTcV/6Gm/1WelUtqxVXnNlrwcw==}
+    engines: {node: '>= 6.0.0'}
     dev: true
 
   /argparse/1.0.10:
@@ -2122,6 +2129,14 @@ packages:
       rollup: 2.41.5
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /vitepress-tags/0.2.4:
+    resolution: {integrity: sha512-z1z1ZEVqt4yqVJRWi9vAdX1JuskPWojN7GGNe+fdn9er9RIzYQSAVFILiVjQ7PIiFvM6y2MKgukJEh2ryhK9Sg==}
+    dependencies:
+      app-root-path: 3.0.0
+      glob: 7.1.6
+      gray-matter: 4.0.2
     dev: true
 
   /vitepress/0.13.0:

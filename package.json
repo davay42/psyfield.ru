@@ -35,6 +35,7 @@
     "vite-plugin-restart": "^0.0.2",
     "vite-plugin-windicss": "^0.14.6",
     "vitepress": "^0.13.0",
-    "windicss": "^2.5.14"
+    "windicss": "^2.5.14",
+    "vitepress-tags": "^0.2.4"
   }
 }
