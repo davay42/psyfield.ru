@@ -5,7 +5,7 @@
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
     "serve": "vitepress serve pages",
-    "publish": "bs --directory=/pages/.vitepress/dist/"
+    "publish": "pnpm bs --directory=/pages/.vitepress/dist/"
   },
   "dependencies": {
     "@vueuse/core": "^4.8.4",
