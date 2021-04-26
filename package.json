@@ -1,11 +1,13 @@
 {
   "license": "MIT",
   "version": "2.0.0",
+  "name": "psyfield.ru",
+  "repository": "https://github.com/davay42/psyfield.ru",
   "scripts": {
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
     "serve": "vitepress serve pages",
-    "publish": "pnpm bs --directory=/pages/.vitepress/dist/"
+    "publish": "pnpm bs --no-git-checks --directory /pages/.vitepress/dist/ "
   },
   "dependencies": {
     "@vueuse/core": "^4.8.4",
