@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vitepress dev pages",
     "build": "vitepress build pages",
-    "serve": "vitepress serve pages"
+    "serve": "vitepress serve pages",
+    "publish": "bs --directory=/pages/.vitepress/dist/"
   },
   "dependencies": {
     "@vueuse/core": "^4.8.4",
@@ -21,6 +22,7 @@
     "@rollup/plugin-alias": "^3.1.2",
     "@types/javascript-time-ago": "^2.0.2",
     "@types/node": "^14.14.41",
+    "branchsite": "^4.0.3",
     "esbuild-register": "^2.5.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^3.0.0",
@@ -35,7 +37,7 @@
     "vite-plugin-restart": "^0.0.2",
     "vite-plugin-windicss": "^0.14.6",
     "vitepress": "^0.13.0",
-    "windicss": "^2.5.14",
-    "vitepress-tags": "^0.2.4"
+    "vitepress-tags": "^0.2.4",
+    "windicss": "^2.5.14"
   }
 }
