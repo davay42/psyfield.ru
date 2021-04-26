@@ -41,7 +41,7 @@ const config: UserConfig<DefaultTheme.Config> = {
       },
       {
         text: 'Авторы',
-        link: '/authors',
+        link: '/authors.html',
         //@ts-ignore
         items: pages.author
       },
@@ -68,7 +68,7 @@ const config: UserConfig<DefaultTheme.Config> = {
         },
         {
           text: 'Авторы',
-          link: '/authors',
+          link: '/authors.html',
           //@ts-ignore
           children: pages.author
         },
