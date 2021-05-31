@@ -3,25 +3,19 @@ a(
   class="hover:shadow",
   style="background-color: var(--c-bg);"
   :href="item.link", 
-  :title="item.lastModified",
-  v-motion,
-  :initial="{ opacity: 0, y: 40 }",
-  :enter="{ opacity: 0, y: 0, scale: 1 }",
-  :visible="{ opacity: 1, y: 0, scale: 1 }",
-  :tapped="{ scale: 0.99, opacity: 0.8 }",
-  :delay="i * 80",
+  :title="item.lastModified"
   )
   .info
     .flex.flex-1.items-center.self-stretch.flex-wrap
-      .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji}}
+      .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
       h3.text-xl {{ item.title }}
       .flex.items-center.mx-2.text-sm.rounded-full.py-1.px-2(class="text-$c-brand bg-$c-bg-secondary",v-if="$site.customData.pages?.[item.data.list]") 
-        .flex-1 {{$site.customData.pages?.[item.data.list].length}}
+        .flex-1 {{ $site.customData.pages?.[item.data.list].length }}
       .flex-auto
       card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
     .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
-  .art(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade) 
+  .art(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }",) 
 </template>
 
 <script setup>

@@ -2,15 +2,9 @@
 .block(
   :title="item.lastModified",
   style="background-color: var(--c-bg-secondary);"
-  v-motion,
-  :initial="{ opacity: 0, y: 40 }",
-  :enter="{ opacity: 0, y: 0, scale: 1 }",
-  :visible="{ opacity: 1, y: 0, scale: 1 }",
-  :delay="i * 80",
-  :style="{ zIndex: i + 10 }"
   )
   a.flex.flex-col.min-content.flex-1(:href="item.link")
-    .art.w-full.h-12em.bg-cover.bg-center.mb-8.rounded(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade)
+    .art.w-full.h-12em.bg-cover.bg-center.mb-8.rounded(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }")
     .flex.flex-1.self-stretch.flex-wrap.items-center
       .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
       .text-2xl.flex.items-center.font-bold {{ item.title }}

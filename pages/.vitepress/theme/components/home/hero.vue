@@ -1,9 +1,6 @@
 <template lang="pug">
 header.home-hero(v-if="showHero")
-  .text-left.max-w-40em.m-auto(v-motion,
-    :initial="{ opacity: 0, y: 40 }",
-    :enter="{ opacity: 0, y: 0, scale: 1 }",
-    :visible="{ opacity: 1, y: 0, scale: 1 }",)
+  .text-left.max-w-40em.m-auto
     figure(v-if="$frontmatter.heroImage")
       img.block.w-auto(:src="$withBase($frontmatter.heroImage)", :alt="$frontmatter.heroAlt")
     .ml-2

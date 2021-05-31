@@ -11,26 +11,26 @@
     .flex.items-center.p-2
       la-expand.text-2xl.mr-2
       span Внешний фокус
-  .flex.flex-wrap.mb-12.shadow-md(v-for="(level,i) in levels", :key="level.title",v-motion-slide-top)
-    .p-4.flex-0.w-full(class="sm:w-180px",:style="levelColor(i,levels.length, true, '60%')") 
-      la-globe.icon(v-if="i==0")
-      la-user.icon(v-if="i==1")
-      la-book.icon(v-if="i==2")
-      la-list.icon(v-if="i==3")
-      la-running.icon(v-if="i==4")
-      la-dot-circle.icon(v-if="i==5")
-      .font-bold.text-xl.mb-4 {{level.title}} 
-      .font-bold {{level.q}}
-    .p-4.flex-1.flex.flex-col(:style="levelColor(i,levels.length, true,undefined,'40%', '0.1')")  
+  .flex.flex-wrap.mb-12.shadow-md(v-for="(level,i) in levels", :key="level.title")
+    .p-4.flex-0.w-full(class="sm:w-180px",:style="levelColor(i, levels.length, true, '60%')") 
+      la-globe.icon(v-if="i == 0")
+      la-user.icon(v-if="i == 1")
+      la-book.icon(v-if="i == 2")
+      la-list.icon(v-if="i == 3")
+      la-running.icon(v-if="i == 4")
+      la-dot-circle.icon(v-if="i == 5")
+      .font-bold.text-xl.mb-4 {{ level.title }} 
+      .font-bold {{ level.q }}
+    .p-4.flex-1.flex.flex-col(:style="levelColor(i, levels.length, true, undefined, '40%', '0.1')")  
       .flex.mb-2.items-center
         la-eye.mr-4
-        .p-2 {{ level?.subtitle}}
+        .p-2 {{ level?.subtitle }}
       .flex.my-2.items-center
         la-compress.mr-4
-        .p-2 {{level?.inside}}
+        .p-2 {{ level?.inside }}
       .flex.mt-2.items-center
         la-expand.mr-4
-        .p-2 {{level?.outside}}
+        .p-2 {{ level?.outside }}
 </template>
 
 <script lang="ts" setup>
@@ -44,10 +44,10 @@ function levelColor(
   a = '0.5'
 ) {
   if (reverse) {
-    i = n-i-1
+    i = n - i - 1
   }
   return {
-    backgroundColor: `hsla(${i*(360/n)}, ${s}, ${l}, ${a})`
+    backgroundColor: `hsla(${i * (360 / n)}, ${s}, ${l}, ${a})`
   }
 }
 
