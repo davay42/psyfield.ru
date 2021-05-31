@@ -1,13 +1,11 @@
-import { UserConfig } from 'vitepress'
-import { DefaultTheme } from '../theme/config'
-import { metaData } from './constants'
-import head from './head'
-//@ts-ignore
+import { metaData } from './constants.js'
+import head from './head.js'
+
 import getTags from 'vitepress-tags'
 
 const pages = getTags()
 
-const config: UserConfig<DefaultTheme.Config> = {
+const config = {
   title: metaData.title,
   description: metaData.description,
   lang: metaData.locale,
@@ -25,25 +23,25 @@ const config: UserConfig<DefaultTheme.Config> = {
         text: 'Поле',
         link: '/field/',
         //@ts-ignore
-        items: pages.field
+        items: pages.field,
       },
       {
         text: 'Карточки',
         link: '/cards/',
         //@ts-ignore
-        items: pages.cards
+        items: pages.cards,
       },
       {
         text: 'Конспекты',
         link: '/synopsis/',
         //@ts-ignore
-        items: pages.synopsis
+        items: pages.synopsis,
       },
       {
         text: 'Авторы',
         link: '/authors.html',
         //@ts-ignore
-        items: pages.author
+        items: pages.author,
       },
     ],
     sidebar: {
@@ -52,41 +50,41 @@ const config: UserConfig<DefaultTheme.Config> = {
           text: 'Поле',
           link: '/field/',
           //@ts-ignore
-          children: pages.collab
+          children: pages.collab,
         },
         {
           text: 'Карточки',
           link: '/cards/',
           //@ts-ignore
-          children: pages.cards
+          children: pages.cards,
         },
         {
           text: 'Конспекты',
           link: '/synopsis/',
           //@ts-ignore
-          children: pages.synopsis
+          children: pages.synopsis,
         },
         {
           text: 'Авторы',
           link: '/authors.html',
           //@ts-ignore
-          children: pages.author
+          children: pages.author,
         },
       ],
     },
   },
   markdown: {
     config: (md) => {
-      md.use(require('markdown-it-classy'));
+      md.use(require('markdown-it-classy'))
       md.use(require('markdown-it-container'), 'card')
       md.use(require('markdown-it-external-links'), {
-        internalDomains: ['localhost','starovdenis.com']
+        internalDomains: ['localhost', 'starovdenis.com'],
       })
-    }
+    },
   },
   customData: {
-    pages: pages
-  }
+    pages: pages,
+  },
 }
 
 export default config
