@@ -7,10 +7,9 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { useSiteDataByRoute, usePageData } from 'vitepress'
+import { useData } from 'vitepress'
 
-const site = useSiteDataByRoute()
-const page = usePageData()
+const { page, site } = useData()
 
 const hasLastUpdated = computed(() => {
   const lu = site.value.themeConfig.lastUpdated
@@ -31,7 +30,7 @@ onMounted(() => {
 })
 </script>
 
-<style scoped lang="postcss">
+<style scoped >
 .last-updated {
   @apply inline-block m-0 text-0.9rem leading-1.4rem text-$c-text-light lg:(text-base leading-1.4rem);
 }

@@ -2,7 +2,7 @@
 header.home-hero(v-if="showHero")
   .text-left.max-w-40em.m-auto
     figure(v-if="$frontmatter.heroImage")
-      img.block.w-auto(:src="$withBase($frontmatter.heroImage)", :alt="$frontmatter.heroAlt")
+      img.block.w-auto(:src="$frontmatter.heroImage", :alt="$frontmatter.heroAlt")
     .ml-2
       h1#main-title.text-4xl.mb-4.leading-10.text-center(v-if="hasHeroText") {{ heroText }}
 
@@ -13,12 +13,11 @@ header.home-hero(v-if="showHero")
         a.action.alt(v-if="hasAltAction", :href="data.altActionLink") {{ data.altActionText }}
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
-import { useSiteDataByRoute, useFrontmatter } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 
-const site = useSiteDataByRoute()
-const data = useFrontmatter()
+const { site, frontmatter: data } = useData()
 
 const showHero = computed(() => {
   return (
@@ -38,17 +37,17 @@ const tagline = computed(() => data.value.tagline || site.value.description)
 const hasAction = computed(() => data.value.actionLink && data.value.actionText)
 const hasAltAction = computed(
   () => data.value.altActionLink && data.value.altActionText,
-)
+);
 </script>
 
-<style scoped lang="postcss">
+<style scoped>
 .home-hero {
   min-height: calc(100vh - var(--header-height));
-  @apply pt-10 pb-11 px-4 md:px-6 text-center xs:py-14 md:(pt-16 pb-17) flex;
+  @apply pt-10 pb-11 px-4 md:px-6 text-center sm:(py-14) md:(pt-16 pb-17) flex;
 }
 
 .links {
-  @apply flex space-x-6 xs:(mt-12 );
+  @apply flex space-x-6 xs:(mt-12);
 }
 
 .action {

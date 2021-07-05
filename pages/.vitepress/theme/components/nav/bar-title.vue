@@ -1,23 +1,20 @@
 <template>
-  <a
-    class="nav-bar-title"
-    :href="$withBase($localePath)"
-    :aria-label="`${$siteByRoute.title}, назад в начало`"
-  >
-    <img
-      v-if="$themeConfig.logo"
-      class="mr-3 align-bottom h-30px"
-      :src="$withBase($themeConfig.logo)"
-      alt="Logo"
-    >
-    {{ $site.title }}
+  <a class="nav-bar-title" :href="localePath" :aria-label="`${site.title}, назад в начало`">
+    <img v-if="theme.logo" class="mr-3 align-bottom h-30px" :src="theme.logo" alt="Logo" />
+    {{ site.title }}
   </a>
 </template>
 
-<style scoped lang="postcss">
+<script setup>
+import { useData } from 'vitepress'
+
+const { site, theme, localePath } = useData();
+
+</script>
+
+<style scoped>
 .nav-bar-title {
-  @apply
-    text-xl md:text-1.3rem font-semibold text-$c-text
+  @apply text-xl md:text-1.3rem font-semibold text-$c-text
     inline-flex items-center whitespace-nowrap
     hover:no-underline;
 }

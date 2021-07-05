@@ -14,7 +14,7 @@ defineProps({
 })
 </script>
 
-<style scoped lang="postcss">
+<style scoped >
 .sidebar {
   /* position: fixed;
   top: var(--header-height);

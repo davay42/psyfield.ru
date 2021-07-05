@@ -1,20 +1,18 @@
 import { computed } from 'vue'
-import { useSiteDataByRoute } from 'vitepress'
-import type { DefaultTheme } from '../config'
+import { useData } from 'vitepress'
 
 export const platforms = ['GitHub', 'GitLab', 'Bitbucket'].map((platform) => {
-  return [platform, new RegExp(platform, 'i')] as const
+  return [platform, new RegExp(platform, 'i')]
 })
 
 export function useRepo() {
-  const site = useSiteDataByRoute()
+  const { site } = useData()
 
   return computed(() => {
-    const theme = site.value.themeConfig as DefaultTheme.Config
+    const theme = site.value.themeConfig
     const name = theme.repo || theme.docsRepo
 
-    if (!name)
-      return null
+    if (!name) return null
 
     const link = getRepoUrl(name)
     const text = getRepoText(link, theme.repoLabel)
@@ -23,25 +21,22 @@ export function useRepo() {
   })
 }
 
-function getRepoUrl(repo: string): string {
+function getRepoUrl(repo) {
   // if the full url is not provided, default to GitHub repo
   return /^https?:/.test(repo) ? repo : `https://github.com/${repo}`
 }
 
-function getRepoText(url: string, text?: string): string {
-  if (text)
-    return text
+function getRepoText(url, text) {
+  if (text) return text
 
   // if no label is provided, deduce it from the repo url
   const hosts = url.match(/^https?:\/\/[^/]+/)
 
-  if (!hosts)
-    return 'Source'
+  if (!hosts) return 'Source'
 
   const platform = platforms.find(([_p, re]) => re.test(hosts[0]))
 
-  if (platform && platform[0])
-    return platform[0]
+  if (platform && platform[0]) return platform[0]
 
   return 'Source'
 }

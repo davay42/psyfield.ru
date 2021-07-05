@@ -10,17 +10,16 @@
     <div v-if="localeLinks" class="item">
       <NavDropdownLink :item="localeLinks" />
     </div>
-
   </nav>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useSiteDataByRoute } from 'vitepress'
-import { useLocaleLinks } from '../../composables/nav'
+import { useData } from 'vitepress'
+import { useLocaleLinks } from '../../composables/nav.js'
 import { useRepo } from '../../composables/repo'
 
-const site = useSiteDataByRoute()
+const { site } = useData()
 const localeLinks = useLocaleLinks()
 const repo = useRepo()
 

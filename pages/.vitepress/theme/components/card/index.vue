@@ -9,8 +9,8 @@ a(
     .flex.flex-1.items-center.self-stretch.flex-wrap
       .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
       h3.text-xl {{ item.title }}
-      .flex.items-center.mx-2.text-sm.rounded-full.py-1.px-2(class="text-$c-brand bg-$c-bg-secondary",v-if="$site.customData.pages?.[item.data.list]") 
-        .flex-1 {{ $site.customData.pages?.[item.data.list].length }}
+      .flex.items-center.mx-2.text-sm.rounded-full.py-1.px-2(class="text-$c-brand bg-$c-bg-secondary",v-if="site.customData.pages?.[item.data.list]") 
+        .flex-1 {{ site.customData.pages?.[item.data.list].length }}
       .flex-auto
       card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
@@ -19,14 +19,15 @@ a(
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { useData } from 'vitepress'
+const { site } = useData()
 const props = defineProps({
   item: Object,
   i: Number
 });
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 a {
   @apply my-4 flex flex-wrap  rounded shadow-sm;
   transition: box-shadow color 100ms ease-in-out;

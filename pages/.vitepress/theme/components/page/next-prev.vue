@@ -2,11 +2,11 @@
 .next-and-prev-link(v-if="hasLinks")
   .container
     .prev
-      a.link(v-if="prev" :href="$withBase(prev.link)")
+      a.link(v-if="prev" :href="prev.link")
         carbon-arrow-left.icon.icon-prev
         span.text {{ prev.text }}
     .next
-      a.link(v-if="next" :href="$withBase(next.link)")
+      a.link(v-if="next" :href="next.link")
         span.text {{ next.text }}
         carbon-arrow-right.icon.icon-next
 </template>
@@ -19,6 +19,7 @@ const { hasLinks, prev, next } = useNextAndPrevLinks()
 
 <style scoped>
 .next-and-prev-link {
+  @apply flex justify-center;
   padding-top: 1rem;
 }
 

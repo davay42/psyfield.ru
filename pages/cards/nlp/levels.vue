@@ -100,7 +100,7 @@ const levels = [
 </script>
 
 
-<style lang="postcss" scoped>
+<style scoped>
 .icon {
   @apply text-4xl mb-2;
 }

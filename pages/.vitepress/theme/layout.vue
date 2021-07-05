@@ -1,7 +1,7 @@
 <template lang="pug">
 .theme(:class="pageClasses")
   nav-bar(v-if="showNavbar" @toggle="toggleSidebar")
-  div(class="pt-$header-height min-h-screen" :class="{'grid-layout': !enableHome }")
+  div(class="pt-$header-height min-h-screen" :class="{ 'grid-layout': !enableHome }")
     sidebar(:open="openSideBar")
     .sidebar-mask(@click="toggleSidebar(false)")
     home(v-if="enableHome")
@@ -12,17 +12,14 @@
 import { ref, computed, watch } from 'vue'
 import {
   useRoute,
-  useSiteData,
-  // usePageData,
-  useSiteDataByRoute,
+  useData,
 } from 'vitepress'
 import { isSideBarEmpty, getSideBarConfig } from './support/sideBar'
 import type { DefaultTheme } from './config'
 
 // generic state
 const route = useRoute()
-const siteData = useSiteData<DefaultTheme.Config>()
-const siteRouteData = useSiteDataByRoute()
+const { site, theme } = useData()
 
 // const page = usePageData()
 
@@ -31,17 +28,16 @@ const enableHome = computed(() => !!route?.data?.frontmatter?.home)
 
 // navbar
 const showNavbar = computed(() => {
-  const { themeConfig } = siteRouteData.value
   if (!route.data) return true
   const { frontmatter } = route.data
-  if (frontmatter.navbar === false || themeConfig.navbar === false)
+  if (frontmatter.navbar === false || theme.value.navbar === false)
     return false
 
   return (
-    siteData.value.title
-    || themeConfig.logo
-    || themeConfig.repo
-    || themeConfig.nav
+    site.value.title
+    || theme.value.logo
+    || theme.value.repo
+    || theme.value.nav
   )
 })
 
@@ -55,10 +51,8 @@ const showSidebar = computed(() => {
   if (frontmatter.home || frontmatter.sidebar === false)
     return false
 
-  const { themeConfig } = siteRouteData.value
-
   return !isSideBarEmpty(
-    getSideBarConfig(themeConfig.sidebar, route.data.relativePath),
+    getSideBarConfig(theme.value.sidebar, route.data.relativePath),
   )
 })
 
@@ -84,7 +78,7 @@ const pageClasses = computed(() => {
 })
 </script>
 
-<style lang="postcss">
+<style >
 @screen lg {
   .grid-layout {
     display: grid;

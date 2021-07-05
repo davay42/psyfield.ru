@@ -4,7 +4,7 @@ ul.sidebar-links(v-if="items.length > 0")
 </template>
 
 <script setup lang="ts">
-import { useSideBar } from '../../composables/sideBar'
+import { useSideBar } from '../../composables/sideBar.js'
 
 const items = useSideBar()
 </script>

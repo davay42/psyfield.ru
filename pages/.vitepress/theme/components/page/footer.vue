@@ -7,10 +7,8 @@ footer.page-footer
 <script setup lang="ts">
 </script>
 
-<style scoped lang="postcss">
+<style scoped >
 .page-footer {
-  @apply
-    py-4 overflow-auto space-y-1
-    lg:(flex space-between align-center space-y-0);
+  @apply max-w-55ch py-4 mx-auto flex justify-center;
 }
 </style>

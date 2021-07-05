@@ -38,7 +38,7 @@ function toggle() {
 }
 </script>
 
-<style scoped lang="postcss">
+<style scoped >
 .nav-dropdown-link {
   @apply relative h-36px overflow-hidden cursor-pointer
     lg:(h-auto overflow-visible);

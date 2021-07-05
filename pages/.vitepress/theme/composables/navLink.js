@@ -1,12 +1,10 @@
-import { computed, Ref } from 'vue'
-import { useRoute } from 'vitepress'
-import type { DefaultTheme } from '../config'
-import { isExternal as isExternalCheck } from '../utils'
-import { useUrl } from '../composables/url'
+import { computed, ref } from 'vue'
+import { useRoute, withBase } from 'vitepress'
 
-export function useNavLink(item: Ref<DefaultTheme.NavItemWithLink>) {
+import { isExternal as isExternalCheck } from '../utils'
+
+export function useNavLink(item) {
   const route = useRoute()
-  const { withBase } = useUrl()
 
   const isExternal = isExternalCheck(item.value.link)
 
@@ -16,24 +14,21 @@ export function useNavLink(item: Ref<DefaultTheme.NavItemWithLink>) {
     let active = false
     if (item.value.activeMatch) {
       active = new RegExp(item.value.activeMatch).test(routePath)
-    }
-    else {
+    } else {
       const itemPath = normalizePath(withBase(item.value.link))
       const deepCount = itemPath.substring(1).split('/').length
-      if (deepCount < 3)
-        active = itemPath === routePath
-      else
-        active = routePath.startsWith(itemPath)
+      if (deepCount < 3) active = itemPath === routePath
+      else active = routePath.startsWith(itemPath)
     }
 
     return {
-      'class': {
+      class: {
         active,
         isExternal,
       },
-      'href': isExternal ? item.value.link : withBase(item.value.link),
-      'target': item.value.target || isExternal ? '_blank' : null,
-      'rel': item.value.rel || isExternal ? 'noopener noreferrer' : null,
+      href: isExternal ? item.value.link : withBase(item.value.link),
+      target: item.value.target || isExternal ? '_blank' : null,
+      rel: item.value.rel || isExternal ? 'noopener noreferrer' : null,
       'aria-label': item.value.ariaLabel,
     }
   })
@@ -44,7 +39,7 @@ export function useNavLink(item: Ref<DefaultTheme.NavItemWithLink>) {
   }
 }
 
-function normalizePath(path: string): string {
+function normalizePath(path) {
   return path
     .replace(/#.*$/, '')
     .replace(/\?.*$/, '')

@@ -17,14 +17,14 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+
 const props = defineProps({
   item: Object,
   i: Number
 });
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 .block {
   @apply p-4 my-8 flex flex-col items-stretch shadow-lg static md:p-8;
 }

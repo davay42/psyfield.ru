@@ -5,7 +5,7 @@ footer(class="mx-auto max-w-960px md:px-6" v-if="$frontmatter.footer")
       | {{ $frontmatter.footer }}
 </template>
 
-<style scoped lang="postcss">
+<style scoped >
 .container {
   padding: 2rem 1.5rem 2.25rem;
 }

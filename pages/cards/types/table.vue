@@ -34,7 +34,7 @@
         td 🚀
         td ✊
         td 💎
-      
+
       tr.font-bold.text-lg.sticky.top-0.z-2
         th Название
 
@@ -165,7 +165,7 @@
 
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 th {
   @apply sticky left-0 text-right font-bold bg-white text-sm dark:bg-warm-gray-700;
 }

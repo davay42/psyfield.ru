@@ -8,7 +8,7 @@ main(aria-labelledby="main-title")
 
 </script>
 
-<style scoped lang="postcss">
+<style scoped >
 .home-content {
   @apply max-w-62rem mx-auto py-6 md:(p-0);
 }
