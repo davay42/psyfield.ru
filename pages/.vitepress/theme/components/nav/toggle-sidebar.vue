@@ -5,13 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineEmit} from 'vue'
-
-
 const emit = defineEmit(['toggle'])
-
-
-
 </script>
 
 <style>

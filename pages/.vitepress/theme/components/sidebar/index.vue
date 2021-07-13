@@ -7,7 +7,6 @@ aside(class="h-auto border-r-1px border-$c-divider")
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
 
 defineProps({
   open: { type: Boolean, required: true },

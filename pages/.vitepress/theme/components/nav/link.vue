@@ -4,18 +4,15 @@
     | {{ item.text }}
 </template>
 
-<script setup lang="ts">
-import { defineProps, toRefs } from 'vue'
-import type { DefaultTheme } from '../../config'
+<script setup>
+import { toRefs } from 'vue'
 import { useNavLink } from '../../composables/navLink.js'
 
-const props = defineProps<{
-  item: DefaultTheme.NavItemWithLink
-}>()
+const props = defineProps(['item'])
 
 const propsRefs = toRefs(props)
 
-const { props: linkProps } = useNavLink(propsRefs.item)
+const { props: linkProps } = useNavLink(propsRefs.item);
 </script>
 
 <style scoped >

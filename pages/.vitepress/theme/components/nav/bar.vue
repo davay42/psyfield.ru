@@ -9,8 +9,6 @@ header.nav-bar
 </template>
 
 <script setup>
-import { defineEmit } from 'vue'
-
 defineEmit(['toggle']);
 </script>
 

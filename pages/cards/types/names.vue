@@ -54,8 +54,7 @@
     h5 Избегающий
 </template>
 
-<script lang="ts" setup>
-import {defineProps} from 'vue'
+<script setup>
 
 defineProps({
   level: {
