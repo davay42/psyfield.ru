@@ -9,7 +9,7 @@ header.nav-bar
 </template>
 
 <script setup>
-defineEmit(['toggle']);
+defineEmits(['toggle']);
 </script>
 
 <style scoped >
