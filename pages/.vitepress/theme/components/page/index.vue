@@ -21,7 +21,7 @@ main.main
 
 <script setup lang="ts">
 import { useData } from 'vitepress'
-const { site, frontmatter } = useData();
+const { theme, frontmatter } = useData();
 </script>
 
 <style scoped>

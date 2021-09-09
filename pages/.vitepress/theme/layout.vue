@@ -15,13 +15,10 @@ import {
   useData,
 } from 'vitepress'
 import { isSideBarEmpty, getSideBarConfig } from './support/sideBar'
-import type { DefaultTheme } from './config'
 
 // generic state
 const route = useRoute()
 const { site, theme } = useData()
-
-// const page = usePageData()
 
 // home
 const enableHome = computed(() => !!route?.data?.frontmatter?.home)

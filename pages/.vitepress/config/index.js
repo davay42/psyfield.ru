@@ -47,7 +47,7 @@ const config = {
           text: 'Поле',
           link: '/field/',
           //@ts-ignore
-          children: pages.collab,
+          children: pages.field,
         },
         {
           text: 'Карточки',
