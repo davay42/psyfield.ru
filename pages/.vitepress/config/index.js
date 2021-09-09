@@ -13,11 +13,8 @@ const config = {
   themeConfig: {
     repo: 'davay42/psyfield.ru',
     logo: '/assets/s-exp.svg',
-    docsDir: '.',
-    docsBranch: 'master',
+    pages,
     docsRepo: 'davay42/pasyfield.ru',
-    editLinks: true,
-    editLinkText: 'Дополнить / исправить',
     nav: [
       {
         text: 'Поле',
@@ -81,9 +78,6 @@ const config = {
         internalDomains: ['localhost', 'starovdenis.com'],
       })
     },
-  },
-  customData: {
-    pages: pages,
   },
 }
 

@@ -12,8 +12,6 @@
       card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
     .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
-  //- .mt-4.flex.flex-col.flex-auto.w-full( v-if="$site.customData.pages?.[item.data.list]")
-  //-   my-areas(:areas="$site.customData.pages?.[item.data.list]")
 </template>
 
 <script setup>

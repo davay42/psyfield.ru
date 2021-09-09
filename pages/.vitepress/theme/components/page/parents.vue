@@ -1,12 +1,12 @@
 <template lang="pug">
 .flex.flex-wrap.mb-4.text-lg
-  .flex-1(v-for="page in getParents(frontmatter.tags, site.customData.pages.all)", :key="page.title") 
+  .flex-1(v-for="page in getParents(frontmatter.tags, theme?.pages.all)", :key="page.title") 
     a(:href="page.link") {{ page.title }}
 </template>
 
 <script setup>
 import { useData } from 'vitepress'
-const { site, frontmatter } = useData();
+const { theme, frontmatter } = useData();
 function getParents(tag, all) {
   let parents = [];
   all.forEach(page => {

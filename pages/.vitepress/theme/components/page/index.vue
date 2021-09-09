@@ -13,7 +13,7 @@ main.main
     content.content(:class="{ cards: !!frontmatter.cards }")
   row-list(
     v-if="frontmatter.list", 
-    :rows="site.customData.pages?.[frontmatter.list]"
+    :rows="theme?.pages?.[frontmatter.list]"
     )
   page-footer
   page-next-prev
