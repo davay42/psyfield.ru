@@ -8,7 +8,3 @@ const props = defineProps({
   item: Object
 });
 </script>
-
-<style lang="stylus" scoped>
-
-</style>

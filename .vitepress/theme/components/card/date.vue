@@ -4,7 +4,7 @@
   .flex-1.font-normal {{ elapsed }}
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { computed } from 'vue'
 import TimeAgo from 'javascript-time-ago'
 
@@ -17,7 +17,3 @@ const elapsed = computed(() => {
   return timeAgo.format(new Date(props.date), 'mini')
 })
 </script>
-
-<style lang="stylus" scoped>
-
-</style>

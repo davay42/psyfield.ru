@@ -17,7 +17,3 @@ function getParents(tag, all) {
   return parents
 }
 </script>
-
-<style lang="stylus" scoped>
-
-</style>

@@ -10,7 +10,3 @@ import { useStorage } from '@vueuse/core'
 
 const icons = useStorage('show-icons', true);
 </script>
-
-<style lang="stylus" scoped>
-
-</style>

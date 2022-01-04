@@ -33,7 +33,7 @@
         .p-2 {{ level?.outside }}
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
 function levelColor(
   i = 0,

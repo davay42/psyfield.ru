@@ -19,20 +19,23 @@
   
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
 </script>
 
-<style lang="stylus" scoped>
-.cell
-  @apply p-6 shadow rounded
+<style scoped>
+.cell {
+  @apply p-6 shadow rounded;
+}
 
-  h4
-    @apply my-2 text-xl
+h4 {
+  @apply my-2 text-xl;
+}
 
-  h5
-    @apply my-2 
-
-  p
-    @apply text-lg m-0
+h5 {
+  @apply my-2;
+}
+p {
+  @apply text-lg m-0;
+}
 </style>

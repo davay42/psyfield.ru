@@ -11,7 +11,7 @@
       .flex.flex-1.mb-2.items-center.py-1(v-for="challenge in level.challenges", :key="challenge") {{ challenge }} 
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
 const lev = [
   {

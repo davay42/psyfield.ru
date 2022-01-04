@@ -35,16 +35,19 @@ const icons = useStorage('show-icons', true);
 
 </script>
 
-<style lang="stylus" scoped>
-.cell
-  @apply p-6 shadow rounded
+<style scoped>
+.cell {
+  @apply p-6 shadow rounded;
+}
+h4 {
+  @apply mt-2 mb-4 text-xl;
+}
 
-  h4
-    @apply mt-2 mb-4 text-xl
+h5 {
+  @apply mb-2;
+}
 
-  h5
-    @apply mb-2
-
-  p
-    @apply text-lg m-0
+p {
+  @apply text-lg m-0;
+}
 </style>

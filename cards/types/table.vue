@@ -161,7 +161,7 @@
         td Способность понимать всех, чувство баланса и гармонии
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
 </script>
 
