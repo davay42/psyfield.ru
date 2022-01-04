@@ -179,7 +179,7 @@ function levelColor(
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .row {
   background-color: hsla(0, 0%, 50%, 0.05);
   @apply flex flex-wrap mb-6 shadow-md transition hover:shadow-lg;

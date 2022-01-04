@@ -64,7 +64,7 @@ defineProps({
 });
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .cell {
   @apply p-6 shadow rounded;
 }

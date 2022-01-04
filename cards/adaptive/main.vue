@@ -22,7 +22,7 @@ const props = defineProps({
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .q {
   @apply mb-2;
 }

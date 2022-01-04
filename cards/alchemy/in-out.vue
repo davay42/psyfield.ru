@@ -60,7 +60,7 @@
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .cell {
   @apply p-4;
 }

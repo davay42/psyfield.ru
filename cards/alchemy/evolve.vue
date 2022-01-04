@@ -70,7 +70,7 @@
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .table {
   display: grid;
   grid-template-columns: minmax(120px, 1fr) 3fr;

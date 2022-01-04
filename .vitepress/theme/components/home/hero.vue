@@ -40,7 +40,7 @@ const hasAltAction = computed(
 );
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .home-hero {
   min-height: calc(100vh - var(--header-height));
   @apply pt-10 pb-11 px-4 md:px-6 text-center sm:(py-14) md:(pt-16 pb-17) flex;

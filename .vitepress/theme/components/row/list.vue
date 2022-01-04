@@ -31,5 +31,5 @@ const sorted = computed(() => {
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 </style>

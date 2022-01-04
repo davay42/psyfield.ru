@@ -47,7 +47,7 @@ function levelColor(
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .row {
   @apply flex flex-col my-2;
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
-.grid.grid-cols-1.my-10.gap-4(class="xs:grid-cols-2")
-  .cell.bg-violet-100(class="dark:bg-violet-800")
+div(class="xs:grid-cols-2 grid grid-cols-1 my-10 gap-4")
+  div(class="dark:bg-violet-800 cell bg-violet-100")
     .text-4xl 😌
     h4 Внутри
     h5 Интроверт
@@ -8,7 +8,7 @@
       li Ориентирован на собственные мотивы, качества, картину мира. 
       li Трудно меняет точку зрения. 
       li Требуется усилие, чтобы выйти наружу к людям.
-  .cell.bg-lime-100(class="dark:bg-lime-800")
+  div(class="dark:bg-lime-800 cell bg-lime-100")
     .text-4xl 🙂
     h4 Снаружи
     h5 Экстраверт
@@ -23,7 +23,7 @@
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .cell {
   @apply p-6 shadow rounded;
 }

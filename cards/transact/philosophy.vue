@@ -32,7 +32,7 @@
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .table {
   grid-template-columns: 60px 1fr;
   justify-content: center;

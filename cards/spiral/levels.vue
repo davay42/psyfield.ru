@@ -114,5 +114,5 @@ const lev = [
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 </style>

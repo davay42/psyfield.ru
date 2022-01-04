@@ -35,7 +35,7 @@
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .row {
   @apply flex items-center my-4;
 }

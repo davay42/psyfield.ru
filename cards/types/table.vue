@@ -165,7 +165,7 @@
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 th {
   @apply sticky left-0 text-right font-bold bg-white text-sm dark:bg-warm-gray-700;
 }

@@ -16,5 +16,5 @@ const props = defineProps({
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 </style>

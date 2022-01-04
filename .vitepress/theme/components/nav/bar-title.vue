@@ -12,7 +12,7 @@ const { site, theme, localePath } = useData();
 
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .nav-bar-title {
   @apply text-xl md:text-1.3rem font-semibold text-$c-text
     inline-flex items-center whitespace-nowrap

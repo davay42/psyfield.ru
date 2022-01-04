@@ -17,7 +17,7 @@ import { useNextAndPrevLinks } from '../../composables/nextAndPrevLinks'
 const { hasLinks, prev, next } = useNextAndPrevLinks()
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .next-and-prev-link {
   @apply flex justify-center;
   padding-top: 1rem;

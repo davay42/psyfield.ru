@@ -24,7 +24,7 @@ import { useData } from 'vitepress'
 const { theme, frontmatter } = useData();
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .main {
   @apply px-4 pb-16 mt-8 pt-1  mx-auto
   md:(px-8);

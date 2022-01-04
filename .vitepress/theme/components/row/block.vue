@@ -22,7 +22,7 @@ const props = defineProps({
 });
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .block {
   @apply p-4 my-8 flex flex-col items-stretch shadow-lg static md:p-8;
 }

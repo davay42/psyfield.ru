@@ -27,7 +27,7 @@ const props = defineProps({
 });
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 a {
   @apply my-4 flex flex-wrap  rounded shadow-sm;
   transition: box-shadow color 100ms ease-in-out;
