@@ -7,6 +7,7 @@ import ViteRestart from 'vite-plugin-restart'
 import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
+  base: './',
   plugins: [
     AutoImport({
       // targets to transform
@@ -22,7 +23,7 @@ export default defineConfig({
       dirs: [
         '.vitepress/theme/components',
         'cards',
-        'components'
+        '.vitepress/components'
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
@@ -57,8 +58,8 @@ export default defineConfig({
     ],
   },
   build: {
-    rollupOptions:{
-      output:{
+    rollupOptions: {
+      output: {
         manualChunks: {
           motion: ['@vueuse/motion']
         }

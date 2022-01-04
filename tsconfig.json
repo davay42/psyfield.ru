@@ -2,7 +2,12 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "esnext",
-    "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker"],
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
+      "webworker"
+    ],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
@@ -14,7 +19,7 @@
     "allowJs": true
   },
   "include": [
-    "pages/.vitepress/**/*.ts",
+    ".vitepress/**/*.ts",
   ],
   "exclude": [
     "**/dist/**"

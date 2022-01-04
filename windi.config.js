@@ -40,7 +40,7 @@ export default defineConfig({
 })
 
 
-function chromaticColors(n:number) {
+function chromaticColors(n) {
   let colors = {}
     for (let i=0;i<n;i++) {
     colors['ch-'+n+'-'+i] = `hsla(${i*(360/n)}, 60%, 80%, 1)`
