@@ -11,14 +11,14 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "@vueuse/core": "^7.6.2",
+    "@vueuse/core": "^8.2.5",
     "@vueuse/motion": "^1.6.0",
     "javascript-time-ago": "^2.3.13",
     "paper": "^0.12.15",
     "vue": "^3.2.31"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.6",
+    "@iconify/json": "^2.1.25",
     "@rollup/plugin-alias": "^3.1.9",
     "@types/javascript-time-ago": "^2.0.3",
     "markdown-it-classy": "^0.2.0",
@@ -26,15 +26,15 @@
     "markdown-it-external-links": "^0.0.6",
     "patch-vue-directive-ssr": "^0.0.1",
     "pug": "3.0.2",
-    "typescript": "^4.5.5",
-    "unplugin-auto-import": "^0.6.1",
-    "unplugin-icons": "^0.13.2",
-    "unplugin-vue-components": "^0.17.21",
-    "vite": "^2.8.4",
+    "typescript": "^4.6.3",
+    "unplugin-auto-import": "^0.6.9",
+    "unplugin-icons": "^0.14.1",
+    "unplugin-vue-components": "^0.18.5",
+    "vite": "^2.9.1",
     "vite-plugin-restart": "^0.1.1",
-    "vite-plugin-windicss": "^1.7.1",
+    "vite-plugin-windicss": "^1.8.3",
     "vitepress": "^0.22.3",
     "vitepress-tags": "^0.4.0",
-    "windicss": "^3.4.4"
+    "windicss": "^3.5.1"
   }
 }
