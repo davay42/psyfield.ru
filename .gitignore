@@ -50,3 +50,5 @@ wiki/
 # Algolia
 .algolia.env
 package.json
+
+public/sitemap.xml

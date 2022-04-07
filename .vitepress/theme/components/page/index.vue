@@ -11,16 +11,17 @@ main.main
       content.content(:class="{ cards: !!frontmatter.cards }")
   row-list(
     v-if="frontmatter.list", 
-    :rows="theme?.pages?.[frontmatter.list]"
+    :rows="pages[route.path]"
     )
   page-footer
   page-next-prev
 </template>
 
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
+import { pages } from '../../composables/pages'
+
 const { theme, frontmatter } = useData();
-import { useRoute } from 'vitepress'
 
 const route = useRoute()
 </script>

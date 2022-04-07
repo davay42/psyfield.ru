@@ -1,17 +1,15 @@
 <template lang="pug">
 .block(
-  :title="item.lastModified",
   style="background-color: var(--c-bg-secondary);"
   )
-  a.flex.flex-col.min-content.flex-1(:href="item.link")
-    .art.w-full.h-12em.bg-cover.bg-center.mb-8.rounded(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }")
+  a.flex.flex-col.min-content.flex-1(:href="item.path")
+    .art.w-full.h-12em.bg-cover.bg-center.mb-8.rounded(v-if="item?.art", :style="{ backgroundImage: 'url(' + '/art/' + item.art + ')' }")
     .flex.flex-1.self-stretch.flex-wrap.items-center
-      .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
+      .mr-2.text-2xl(v-if="item?.emoji") {{ item?.emoji }}
       .text-2xl.flex.items-center.font-bold {{ item.title }}
       .flex-auto
-      card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
-    .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
+
 </template>
 
 <script setup>

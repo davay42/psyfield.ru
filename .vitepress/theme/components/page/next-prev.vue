@@ -1,21 +1,25 @@
-<template lang="pug">
-.next-and-prev-link(v-if="hasLinks")
-  .container
-    .prev
-      a.link(v-if="prev" :href="prev.link")
-        carbon-arrow-left.icon.icon-prev
-        span.text {{ prev.text }}
-    .next
-      a.link(v-if="next" :href="next.link")
-        span.text {{ next.text }}
-        carbon-arrow-right.icon.icon-next
-</template>
+
 
 <script setup lang="ts">
-import { useNextAndPrevLinks } from '../../composables/nextAndPrevLinks'
+import { useSiblings } from '../../composables/pages'
+import { useRoute } from 'vitepress'
+const route = useRoute()
 
-const { hasLinks, prev, next } = useNextAndPrevLinks()
+const siblings = computed(() => useSiblings(route.path))
 </script>
+
+<template lang="pug">
+.next-and-prev-link(v-if="siblings.prev || siblings.next")
+  .container
+    .prev
+      a.link(v-if="siblings.prev" :href="siblings.prev.path")
+        carbon-arrow-left.icon.icon-prev
+        span.text {{ siblings.prev.title }}
+    .next
+      a.link(v-if="siblings.next" :href="siblings.next.path")
+        span.text {{ siblings.next.title }}
+        carbon-arrow-right.icon.icon-next
+</template>
 
 <style lang="postcss" scoped>
 .next-and-prev-link {

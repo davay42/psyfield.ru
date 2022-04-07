@@ -76,7 +76,6 @@ declare module 'vue' {
     LaUser: typeof import('~icons/la/user')['default']
     LaUserCheck: typeof import('~icons/la/user-check')['default']
     LaWindowMinimize: typeof import('~icons/la/window-minimize')['default']
-    MdiWateringCan: typeof import('~icons/mdi/watering-can')['default']
     MovingLogo: typeof import('./.vitepress/components/moving/logo.vue')['default']
     MovingPolys: typeof import('./.vitepress/components/moving/polys.vue')['default']
     NavBar: typeof import('./.vitepress/theme/components/nav/bar.vue')['default']

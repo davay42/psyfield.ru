@@ -6,6 +6,11 @@ import WindiCSS from 'vite-plugin-windicss'
 import ViteRestart from 'vite-plugin-restart'
 import AutoImport from 'unplugin-auto-import/vite'
 
+import Pages from "vite-plugin-pages";
+import { extendRoutes } from "vitepress-pages";
+import generateSitemap from 'vite-plugin-pages-sitemap'
+
+
 export default defineConfig({
   base: './',
   plugins: [
@@ -50,7 +55,19 @@ export default defineConfig({
     ViteRestart({
       restart: '.vitepress/config/*.*',
     }),
+    Pages({
+      dirs: [
+        { dir: ".", baseRoute: "." },
+      ],
+      exclude: ['**/node_modules/**/*.*', '**/!(index).md'],
+      extensions: ['md'],
+      ...extendRoutes({
+        mediaTypes: {}
+      }),
+      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://psyfield.ru/' })),
+    }),
   ],
+
   optimizeDeps: {
     include: [
       'vue',
