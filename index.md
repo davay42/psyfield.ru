@@ -13,7 +13,4 @@ altActionLink: /support
 
 heroImage: /assets/logo-color.svg
 heroAlt: Психологическое поле
-
 ---
-
-

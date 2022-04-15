@@ -1,5 +1,6 @@
 ---
 title: Большой круг мандал
+subtitle: Джоан Келлог
 tags: synopsis
 date: 2021-02-02
 links:

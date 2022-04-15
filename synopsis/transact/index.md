@@ -1,5 +1,6 @@
 ---
 title: Транзактный анализ
+subtitle: Эрик Берн
 tags: synopsis
 date: 2021-12-09
 ---

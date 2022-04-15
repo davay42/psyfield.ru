@@ -3,11 +3,12 @@ main.main
   transition(name="fade")
     .content(:class="{ 'full-width': frontmatter.fullWidth }"  :key="route.path")
       page-parents
-      .text-4xl.font-bold.mb-8.flex.flex-wrap.items-center(v-if="frontmatter.title" :key="frontmatter.title") 
+      .font-bold.mb-4(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
+      .text-4xl.font-bold.flex.flex-wrap.items-center(v-if="frontmatter.title" :key="frontmatter.title") 
         .mr-2 {{ frontmatter.title }}
         .flex-1
         .mx-2.my-4.text-6xl {{ frontmatter.emoji }}
-      .font-bold.mt-2.mb-4(v-if="frontmatter.subtitle") {{ frontmatter.subtitle }}
+
       content.content(:class="{ cards: !!frontmatter.cards }")
   row-list(
     v-if="frontmatter.list", 
@@ -28,8 +29,7 @@ const route = useRoute()
 
 <style lang="postcss" scoped>
 .main {
-  @apply px-4 pb-16 mt-8 pt-1  mx-auto
-  md:(px-8);
+  @apply px-4 pb-16 mt-8 pt-1 mx-auto md: (px-8);
 }
 
 .content {

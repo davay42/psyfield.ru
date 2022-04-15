@@ -37,7 +37,7 @@ export default {
       },
       {
         text: 'Авторы',
-        link: '/authors.html',
+        link: '/authors/',
         items: pages.author,
       },
     ],
@@ -60,7 +60,7 @@ export default {
         },
         {
           text: 'Авторы',
-          link: '/authors.html',
+          link: '/authors/',
           children: pages.author,
         },
       ],

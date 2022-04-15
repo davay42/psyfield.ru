@@ -1,5 +1,6 @@
 ---
 title: Психоанализ
+subtitle: Нэнси Мак-Вильямс
 tags: synopsis
 date: 2021-12-01
 ---
