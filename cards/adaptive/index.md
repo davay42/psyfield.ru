@@ -1,6 +1,6 @@
 ---
 title: Адаптационная теория эмоций
-subtitle: Юлия Зотова
+subtitle: Роберт Плутчик
 tags: cards
 basic:
   - title: Инкорпорация
