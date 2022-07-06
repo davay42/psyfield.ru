@@ -1,24 +1,24 @@
 {
-  "license": "MIT",
-  "version": "2.0.2",
   "name": "psyfield.ru",
-  "repository": "https://github.com/davay42/psyfield.ru",
+  "version": "2.0.2",
   "private": true,
+  "repository": "https://github.com/davay42/psyfield.ru",
+  "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev",
     "build": "vitepress build",
-    "serve": "vitepress serve --port 5550",
-    "deploy": "sh deploy.sh"
+    "deploy": "sh deploy.sh",
+    "dev": "vitepress dev",
+    "serve": "vitepress serve --port 5550"
   },
   "dependencies": {
-    "@vueuse/core": "^8.2.5",
+    "@vueuse/core": "^8.9.0",
     "@vueuse/motion": "^1.6.0",
-    "javascript-time-ago": "^2.3.13",
+    "javascript-time-ago": "^2.5.6",
     "paper": "^0.12.15",
-    "vue": "^3.2.31"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.25",
+    "@iconify/json": "^2.1.73",
     "@rollup/plugin-alias": "^3.1.9",
     "@types/javascript-time-ago": "^2.0.3",
     "markdown-it-classy": "^0.2.0",
@@ -26,17 +26,17 @@
     "markdown-it-external-links": "^0.0.6",
     "patch-vue-directive-ssr": "^0.0.1",
     "pug": "3.0.2",
-    "typescript": "^4.6.3",
-    "unplugin-auto-import": "^0.6.9",
-    "unplugin-icons": "^0.14.1",
-    "unplugin-vue-components": "^0.18.5",
-    "vite": "^2.9.1",
-    "vite-plugin-pages": "^0.22.0",
-    "vite-plugin-pages-sitemap": "^1.2.0",
-    "vite-plugin-windicss": "^1.8.3",
-    "vitepress": "^0.22.3",
-    "vitepress-tags": "^0.4.0",
+    "typescript": "^4.7.4",
+    "unplugin-auto-import": "^0.9.2",
+    "unplugin-icons": "^0.14.7",
+    "unplugin-vue-components": "^0.21.1",
+    "vite": "^2.9.13",
+    "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-pages-sitemap": "^1.2.2",
+    "vite-plugin-windicss": "^1.8.6",
+    "vitepress": "^1.0.0-alpha.4",
     "vitepress-pages": "^0.8.5",
-    "windicss": "^3.5.1"
+    "vitepress-tags": "0.4.0",
+    "windicss": "^3.5.6"
   }
 }
