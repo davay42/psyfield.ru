@@ -3,6 +3,7 @@ import { defineConfig } from 'windicss/helpers'
 
 
 export default defineConfig({
+  separator: '_',
   darkMode: 'class',
   shortcuts: {
     bc: 'border-gray-300 dark:border-true-gray-600',
@@ -42,9 +43,9 @@ export default defineConfig({
 
 function chromaticColors(n) {
   let colors = {}
-    for (let i=0;i<n;i++) {
-    colors['ch-'+n+'-'+i] = `hsla(${i*(360/n)}, 60%, 80%, 1)`
-    colors['ch-'+n+'-'+i+'d'] = `hsla(${i*(360/n)}, 60%, 20%, 1)`
+  for (let i = 0; i < n; i++) {
+    colors['ch-' + n + '-' + i] = `hsla(${i * (360 / n)}, 60%, 80%, 1)`
+    colors['ch-' + n + '-' + i + 'd'] = `hsla(${i * (360 / n)}, 60%, 20%, 1)`
   }
   return colors
 }
