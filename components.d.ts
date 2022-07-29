@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     Card: typeof import('./.vitepress/theme/components/card/index.vue')['default']
     CardDate: typeof import('./.vitepress/theme/components/card/date.vue')['default']
+    DefenseDefenseCard: typeof import('./cards/defense/DefenseCard.vue')['default']
     FlatColorIconsIdea: typeof import('~icons/flat-color-icons/idea')['default']
     FlatColorIconsMultipleInputs: typeof import('~icons/flat-color-icons/multiple-inputs')['default']
     FlatColorIconsOrgUnit: typeof import('~icons/flat-color-icons/org-unit')['default']

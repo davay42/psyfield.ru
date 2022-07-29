@@ -5,6 +5,10 @@ tags: cards
 cards: true
 ---
 
+<script setup>
+import DefenseCard from './DefenseCard.vue'
+</script>
+
 ::: card
 
 ## Задачи защитного поведения
@@ -94,7 +98,7 @@ cards: true
 
 ### Изоляция
 
-
+<defense-card />
 
 **Психологический уход в другое состояние сознания.**
 
