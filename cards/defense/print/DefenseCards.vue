@@ -112,7 +112,7 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 								tspan(v-for="line in split(def.t)" :key="line" x="0" dy="14") {{line}}
 
 							text.quote(font-size="9" y="117")
-								tspan(v-for="line in split(`— ${def.q.trim()}` || '')" :key="line" x="0" dy="14") {{line}}
+								tspan(v-for="line in split(`— ${def.q}` || '')" :key="line" x="0" dy="14") {{line}}
 
 					circle.me(:cx="w / 2" :cy="h / 2" :r="w / 8" fill="yellow")
 					mask#me
