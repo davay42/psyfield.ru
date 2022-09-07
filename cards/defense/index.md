@@ -3,6 +3,7 @@ title: Психологические защиты
 subtitle: Психоаналитическая диагностика Нэнси МакВильямс
 tags: cards
 cards: true
+wiki: https://en.wikipedia.org/wiki/Defence_mechanism
 ---
 
 <script setup>
