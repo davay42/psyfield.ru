@@ -77,7 +77,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          motion: ['@vueuse/motion']
+
         }
       }
     }
