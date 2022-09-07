@@ -4,6 +4,7 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import WindiCSS from 'vite-plugin-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
+import ViteYaml from '@modyfi/vite-plugin-yaml';
 
 import Pages from "vite-plugin-pages";
 import { extendRoutes } from "vitepress-pages";
@@ -13,6 +14,7 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 export default defineConfig({
   base: './',
   plugins: [
+    ViteYaml(),
     AutoImport({
       // targets to transform
       include: [

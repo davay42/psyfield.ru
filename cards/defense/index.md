@@ -9,6 +9,11 @@ cards: true
 import DefenseCard from './DefenseCard.vue'
 </script>
 
+<a href="/books/defenses.pdf" download="Психология-защиты-личности.pdf">Л.Ю. Субботина, М.В. Юркова: Психология защиты личности. Учебное пособие</a>
+
+[Макеты карточек для вывода на печать](./print/)
+
+
 ::: card
 
 ## Задачи защитного поведения

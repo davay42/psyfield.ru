@@ -14,11 +14,14 @@
 		"@vueuse/core": "8.9.0",
 		"@vueuse/motion": "1.6.0",
 		"javascript-time-ago": "2.5.7",
+		"jszip": "^3.10.1",
 		"paper": "0.12.15",
-		"vue": "3.2.38"
+		"vue": "3.2.38",
+		"wrap-svg-text": "^0.0.7"
 	},
 	"devDependencies": {
 		"@iconify/json": "2.1.73",
+		"@modyfi/vite-plugin-yaml": "^1.0.3",
 		"@rollup/plugin-alias": "3.1.9",
 		"@types/javascript-time-ago": "2.0.3",
 		"markdown-it-classy": "0.2.0",

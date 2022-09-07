@@ -12,14 +12,9 @@ header.nav-bar
 defineEmits(['toggle']);
 </script>
 
-<style scoped >
+<style scoped lang="postcss">
 .nav-bar {
-  @apply fixed top-0 inset-x-0 z-$z-index-navbar
-    flex space-between align-center select-none
-    border-b-1px border-$c-divider
-    py-0.7rem px-4
-    h-$header-height bg-$c-bg
-    md:px-5 lg:px-6;
+  @apply fixed top-0 inset-x-0 z-$z-index-navbar flex space-between align-center select-none border-b-1px border-$c-divider py-0.7rem px-4 h-$header-height bg-$c-bg md: px-5 lg:px-6;
 }
 
 .nav-bar.root {

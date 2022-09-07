@@ -104,3 +104,6 @@ basic:
 ![](./cone.png)
 
 :::
+
+
+Robert Plutchik's (1979) theory views defences as derivatives of basic emotions, which in turn relate to particular diagnostic structures. According to his theory, reaction formation relates to joy (and manic features), denial relates to acceptance (and histrionic features), repression to fear (and passivity), regression to surprise (and borderline traits), compensation to sadness (and depression), projection to disgust (and paranoia), displacement to anger (and hostility) and intellectualization to anticipation (and obsessionality).

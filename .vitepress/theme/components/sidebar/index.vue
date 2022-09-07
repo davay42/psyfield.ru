@@ -13,7 +13,7 @@ defineProps({
 })
 </script>
 
-<style scoped >
+<style scoped lang="postcss">
 .sidebar {
   /* position: fixed;
   top: var(--header-height);
@@ -26,7 +26,7 @@ defineProps({
   transform: translateX(-100%);
   transition: transform 0.25s ease;
   height: calc(100vh - var(--header-height));
-  @apply fixed top-$header-height bottom-0 left-0 lg:sticky;
+  @apply fixed top-$header-height bottom-0 left-0 lg_sticky max-w-420;
 }
 
 @screen lg {
