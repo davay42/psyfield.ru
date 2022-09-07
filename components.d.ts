@@ -48,6 +48,8 @@ declare module '@vue/runtime-core' {
     LaEye: typeof import('~icons/la/eye')['default']
     LaGem: typeof import('~icons/la/gem')['default']
     LaGifts: typeof import('~icons/la/gifts')['default']
+    LaGithub: typeof import('~icons/la/github')['default']
+    LaGithub2: typeof import('~icons/la/github2')['default']
     LaGlobe: typeof import('~icons/la/globe')['default']
     LaGrin: typeof import('~icons/la/grin')['default']
     LaHandHoldingHeart: typeof import('~icons/la/hand-holding-heart')['default']

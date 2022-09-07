@@ -1,6 +1,6 @@
 ---
 title: Макеты карточек по психозащитам
-subtitle:	SVG-макеты для печати
+subtitle: SVG-макеты для печати
 
 defenses:
   Примитивные:
@@ -290,8 +290,6 @@ defenses:
         как меня чуть не покусала собака.
 
 --- 
-
-[Исходный код](https://github.com/davay42/psyfield.ru/blob/master/cards/defense/print/index.md?plain=1)
 
 <script setup>
 import DefenseCards from './DefenseCards.vue'

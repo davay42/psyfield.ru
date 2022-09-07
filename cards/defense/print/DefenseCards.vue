@@ -73,8 +73,16 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 
 <template lang='pug'>
 .flex.flex-col
-	.p-2.text-6xl.m-4.bg-light-600.dark_bg-dark-50.w-23.rounded-xl.shadow-xl.absolute.-top-4.right-2.cursor-pointer
-		la-save(@click="saveAll()")
+	.flex.gap-2
+		a.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark_bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(
+			href="https://github.com/davay42/psyfield.ru/blob/master/cards/defense/print/index.md?plain=1"
+			target="_blank"
+			)
+			la-github.text-4xl
+			.text-xl Исходный код
+		.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark_bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(@click="saveAll()")
+			la-save.text-4xl
+			.text-xl Скачать
 	.p-0(v-for="(defs, level) in defenses" :key="level") 
 		h4.text-3xl.my-8.p-4 {{level}}
 		.flex.flex-wrap.w-200.gap-4
