@@ -36,6 +36,7 @@ declare module '@vue/runtime-core' {
     LaBookOpen: typeof import('~icons/la/book-open')['default']
     LaBrain: typeof import('~icons/la/brain')['default']
     LaBullseye: typeof import('~icons/la/bullseye')['default']
+    LaCamera: typeof import('~icons/la/camera')['default']
     LaChessPawn: typeof import('~icons/la/chess-pawn')['default']
     LaChessQueen: typeof import('~icons/la/chess-queen')['default']
     LaChessRook: typeof import('~icons/la/chess-rook')['default']

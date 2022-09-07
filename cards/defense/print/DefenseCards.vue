@@ -112,21 +112,21 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 						circle( :cx="w / 2" :cy="h / 2" :r="w / 8" fill="black")
 
 					g.art(mask="url(#me)")
-						g(v-if="d == 'Примитивное отстранение'" )
+						g(v-if="d == 'Изоляция'" )
 							circle(:cx="w / 2" :cy="h / 2 - 15" :r="w / 5" fill="#fff" opacity="0.6")
 
 						g(v-if="d == 'Отрицание'")
 							circle( :cx="w / 2" :cy="h / 2 + h / 2.6" :r="w / 1.5" fill="#fff" opacity="0.5")
 
 						g(v-if="d == 'Всемогущий контроль'")
-							path(:d="`M0 0 L ${w / 2} ${h / 2} L ${w} 0 z`" fill="#fff5")
-							path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#0005")
+							path(:d="`M0 0 L ${w / 2} ${h / 2} L ${w} 0 z`" fill="#fff" opacity="0.7")
+							path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
 
-						g(v-if="d == 'Примитивная идеализация'")
-							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#fff5")
-							path(:d="`M ${w * 0.37} ${h / 2} L ${w / 2} ${h} L ${w * 0.63} ${h / 2} z`" fill="#0005" mask="url(#me)")
+						g(v-if="d == 'Идеализация'")
+							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#fff" opacity="0.7")
+							path(:d="`M ${w * 0.37} ${h / 2} L ${w / 2} ${h} L ${w * 0.63} ${h / 2} z`" fill="#000" opacity="0.7" mask="url(#me)")
 
 						g(v-if="d == 'Проекция'")
-							path(:d="`M 0 ${0} L ${w / 2} ${h / 2} L ${w} ${0} z`" fill="#fff5")
-							//- path(:d="`M ${width * 0.3} ${height / 2} L ${width / 2} ${height} L ${width * 0.6} ${height / 2} z`" fill="#0005" mask="url(#me)")
+							path(:d="`M 0 ${0} L ${w / 2} ${h / 2} L ${w} ${0} z`" fill="#fff" opacity="0.7")
+							//- path(:d="`M ${w * 0.3} ${h / 2} L ${w / 2} ${h} L ${w * 0.6} ${h / 2} z`" fill="#000" opacity="0.7" mask="url(#me)")
 </template>
