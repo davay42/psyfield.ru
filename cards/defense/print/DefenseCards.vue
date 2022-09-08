@@ -1,5 +1,6 @@
 <script setup>
 import JSZip from 'jszip'
+import paths from './paths.json'
 
 const props = defineProps({
 	defenses: Object
@@ -87,7 +88,6 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 		h4.text-3xl.my-8.p-4 {{level}}
 		.flex.flex-wrap.w-200.gap-4
 			.p-0(v-for="(def,d,i) in defs" :key="def")
-
 				svg.rounded-xl.overflow-hidden.shadow-xl(
 					:id="`${d}`"
 					:width="size[0]" 
@@ -95,6 +95,13 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 					:viewbox="`0 0 ${size[0]} ${size[1]}`"
 					font-family="Commissioner"
 					)
+
+					defs
+						mask#me
+							rect(:width="w" :height="h" fill="white")
+							circle( :cx="w / 2" :cy="h / 2" :r="w / 6" fill="black")
+						clipPath#clip
+							circle( :cx="w / 2" :cy="h / 2" :r="w / 6" fill="black")
 
 					rect.b(x="0" y="0" :width="size[0]" :height="size[1]" fill="#777")
 					rect.i(:x="size[0]/2.618" y="0" :width="size[0]/1.618" :height="size[1]" fill="#fff")
@@ -114,21 +121,21 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 							text.quote(font-size="9" y="117")
 								tspan(v-for="line in split(`— ${def.q}` || '')" :key="line" x="0" dy="14") {{line}}
 
-					circle.me(:cx="w / 2" :cy="h / 2" :r="w / 8" fill="yellow")
-					mask#me
-						rect(:width="w" :height="h" fill="white")
-						circle( :cx="w / 2" :cy="h / 2" :r="w / 8" fill="black")
+					circle.me(:cx="w / 2" :cy="h / 2" :r="w / 6" fill="#ff0")
 
-					g.art(mask="url(#me)")
+
+					g.art
+
 						g(v-if="d == 'Изоляция'" )
-							circle(:cx="w / 2" :cy="h / 2 - 15" :r="w / 5" fill="#fff" opacity="0.6")
+							circle(:cx="w / 2" :cy="h *.55" :r="w / 4" fill="#fff" opacity="0.6")
 
-						g(v-if="d == 'Отрицание'")
-							circle( :cx="w / 2" :cy="h / 2 + h / 2.6" :r="w / 1.5" fill="#fff" opacity="0.5")
+						g(v-if="d == 'Отрицание'" mask="url(#me)")
+							circle( :cx="w / 2" :cy="h*.85" :r="w / 1.5" fill="#fff" opacity="0.5")
 
 						g(v-if="d == 'Всемогущий контроль'")
-							path(:d="`M0 0 L ${w / 2} ${h / 2} L ${w} 0 z`" fill="#fff" opacity="0.7")
-							path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
+							path(:d="`M0 0 L ${0} ${h} L ${w/2} ${h/2} z`" fill="#fff" opacity="0.7")
+							path(:d="`M ${w} ${0} L ${w} ${h} L ${w/2} ${h/2} z`" fill="#fff" opacity="0.7")
+							//- path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
 
 						g(v-if="d == 'Идеализация'")
 							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#fff" opacity="0.7")
@@ -137,4 +144,102 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 						g(v-if="d == 'Проекция'")
 							path(:d="`M 0 ${0} L ${w / 2} ${h / 2} L ${w} ${0} z`" fill="#fff" opacity="0.7")
 							//- path(:d="`M ${w * 0.3} ${h / 2} L ${w / 2} ${h} L ${w * 0.6} ${h / 2} z`" fill="#000" opacity="0.7" mask="url(#me)")
+
+						g(v-if="d == 'Обесценивание'")
+							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#000" opacity="0.7")
+							path(:d="`M ${w * 0.37} ${h / 2} L ${w / 2} ${h} L ${w * 0.63} ${h / 2} z`" fill="#fff" opacity="0.7" mask="url(#me)")
+
+						g(v-if="d == 'Интроекция'")
+							path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
+
+
+						g(v-if="d == 'Проективная идентификация'")
+							path(:d="`M0 0 L ${w / 2} ${h / 2} L ${w} 0 z`" fill="#fff" opacity="0.7")
+							path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
+
+						g(v-if="d == 'Расщепленое Эго'")
+							rect(:x="0" :y="h/2" :width="w" :height="h/2" fill="#fff" opacity="0.5")
+							rect(:x="0" :y="0" :width="w" :height="h/2" fill="#000" opacity="0.5")
+
+						g(v-if="d == 'Диссоциация'")
+							circle(:cx="w/2" :cy="h*.8" :r="w/5" fill="#000" opacity="0.5")
+
+
+
+
+
+						g(v-if="d == 'Вытеснение'")
+							rect(:x="0" :y="h*.8" :width="w" :height="h/2" fill="#000" opacity="0.5")
+
+						g(v-if="d == 'Регрессия'")
+							circle(:cx="w/2" :cy="h*.8" :r="w/12" fill="#ff0" opacity="0.5")
+
+						g(v-if="d == 'Изоляция аффекта'" mask="url(#me)")
+							rect(:x="0" :y="0" :width="w" :height="h/2" fill="#fff" opacity="0.5")
+							ellipse(:cx="w/2" :cy="h*.8" :rx="w/6" :ry="h/6" fill="#000" opacity="0.5")
+
+						g(v-if="d == 'Интеллектуализация'" mask="url(#me)")
+							path( transform="scale(0.3) translate(40 50)"
+
+								:d="paths.intel" 
+								fill="#fff" fill-opacity="0.4" opacity="1" stroke="#000"  stroke-linecap="round" stroke-linejoin="round" stroke-width="3")
+
+						g(v-if="d== 'Рационализация'" mask="url(#me)" stroke-width="2")
+							line(:x1="0" :y1="h/2" :x2="w" :y2="h/2" stroke="black"  opacity="1")
+							line(:x1="w/2" :y1="0" :x2="w/2" :y2="h" stroke="black"  opacity="1")
+							line(:x1="w" :y1="0" :x2="0" :y2="h" stroke="black"  opacity="1")
+
+						g(v-if="d=='Морализация'")
+							rect(:x="w*.1" :y="h*0.62" :width="w*.8" :height="h*.14" fill="#fff" opacity="0.7")
+							rect(:x="w*.2" :y="h*0.76" :width="w*.6" :height="h*.14" fill="#fff" opacity="0.7")
+							rect(:x="w*.3" :y="h*0.90" :width="w*.4" :height="h*.14" fill="#fff" opacity="0.7")
+
+						g(v-if="d=='Компартментализация'" mask="url(#me)")
+							g(:transform="`translate(${w/2} ${h/2})`")
+								g(v-for="i in 4" :key="i" :transform="`rotate(${i*90})`")
+									rect(:y="-h*.075" :x="w*.2" :width="w*.1" :height="h*.15" fill="#fff" opacity="0.7")
+									path(:d="`M ${w*.3} ${-h*.075} L ${w*.7} ${-h/2} L ${w*.7} ${h/2} L ${w*.3} ${h*0.075} z`"  fill="#fff" opacity="0.5")
+
+					g(v-if="d=='Аннулирование'")
+						circle(:cx="w/2" :cy="h*.2" :r="h/8" fill="#000")
+						ellipse(:cx="w/2" :cy="h*.36" :rx="w/4" :ry="h*.33" fill="#fff" opacity="0.8")
+
+					g(v-if="d=='Смещение'" mask="url(#me)")
+						path(d="M64.9,85C25.9,85.1,2.8,0,129.9,0s0,170,0,170S141.2,84.8,64.9,85z" fill="#fff" opacity="0.5")
+						path(transform="translate(120 180) rotate(180)" fill="#000" d="M64.9,85C25.9,85.1,2.8,0,129.9,0s0,170,0,170S141.2,84.8,64.9,85z" opacity="0.5")
+
+					g(v-if="d=='Поворот против себя'")
+						path(:d="`M ${w*.1} ${h*.1} L ${w/2} ${h/2} L ${w*.9} ${h*.1} Z`" fill="#000" opacity="0.7")
+
+					g(v-if="d=='Реактивное образование'")
+						path(:d="`M ${-w/2} ${0} L ${w/2} ${h/2} L ${w*1.5} ${0} Z`" fill="#000" opacity="0.7" clip-path="url(#clip)")
+						path(:d="`M ${w*.36} ${h*.42} L ${w/2} ${0} L ${w*.64} ${h*.42} Z`" fill="#fff" opacity="0.7" mask="url(#me)")
+
+					g(v-if="d=='Идентификация'")
+						circle(:cx="w/2" :cy="h*.2" :r="h/8" fill="#ff0" opacity="0.6")
+						rect(:x="w/3" :y="0" :width="w/3" :height="h/2" fill="#fff" opacity="0.4" mask="url(#me)")
+						//- ellipse(:cx="w/2" :cy="h*.36" :rx="w/4" :ry="h*.33" fill="#fff" opacity="0.8")
+
+					g(v-if="d=='Инверсия'")
+						path(:d="`M ${w*.25} ${h*.7} L ${w/2} ${h/2} L ${w*.75} ${h*.7} Z`" fill="#000" opacity="0.7" clip-path="url(#clip)")
+						path(:d="`M ${0} ${0} L ${w/2} ${h/2} L ${w} ${0} Z`" fill="#fff" opacity="0.7" )
+
+					g(v-if="d=='Отреагирование вовне'")
+						line(:x1="w/4" :y1="h*.2" :x2="w*.75" :y2="h*.8" stroke="#fff" opacity="0.3" :stroke-width="w/3")
+						circle(:cx="w/4" :cy="h*.2" :r="w/6" fill="#fff")
+						circle(:cx="w*.75" :cy="h*.8" :r="w/6" fill="#555")
+
+					g(v-if="d=='Сублимация'")
+						path(d="M64.9,85C64.9,85,48.3,0,0,0s196.3,0,129.9,0C77,0,64.9,85,64.9,85z" fill="#fff" opacity="0.6")
+						path(d="M64.9,85C64.9,85,48.3,0,0,0s196.3,0,129.9,0C77,0,64.9,85,64.9,85z" clip-path="url(#clip)" opacity="0.6")
+
+					g(v-if="d=='Сексуализация'" )
+						path(d="M64.9,85.1c0,0,2.1-3.7,6.3-3.7c3.7,0,6.3,3.9,6.3,8.5c0,5.2-3.5,11.4-12.7,16.8c-9.1-5.3-12.7-11.6-12.7-16.8c0-4.5,2.6-8.5,6.3-8.5C62.8,81.3,64.9,85.1,64.9,85.1z" fill="#000" opacity="0.6")
+						path(d="M64.9,106.9c0,0-8.3,14.8-24.6,14.8c-14.6,0-24.6-15.1-24.6-32.8c0-20.4,13.7-44.6,49.2-65.6c35.5,21,49.2,45.2,49.2,65.6c0,17.6-10,32.8-24.6,32.8C73.2,121.7,64.9,106.9,64.9,106.9z" mask="url(#me)" fill="#fff" opacity="0.6")
+
+					g(v-if="d=='Соматизация'")
+						circle(:cx="w/2" :cy="h" :r="w/2" mask="url(#me)" opacity="0.6")
+
+					g(v-if="d=='Юмор'")
+						path(d="M5.6,85c0,0,13.5,37.3,59.3,37.3c46.3,0,59.7-37.3,59.7-37.3s-1.8,69-59.5,69S5.6,85,5.6,85z" fill="#fff")
 </template>
