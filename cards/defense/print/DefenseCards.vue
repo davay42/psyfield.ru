@@ -126,7 +126,7 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 
 					g.art
 
-						g(v-if="d == 'Изоляция'" )
+						g(v-if="d == 'Отстранение'" )
 							circle(:cx="w / 2" :cy="h *.55" :r="w / 4" fill="#fff" opacity="0.6")
 
 						g(v-if="d == 'Отрицание'" mask="url(#me)")
@@ -137,16 +137,16 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 							path(:d="`M ${w} ${0} L ${w} ${h} L ${w/2} ${h/2} z`" fill="#fff" opacity="0.7")
 							//- path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
 
-						g(v-if="d == 'Идеализация'")
-							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#fff" opacity="0.7")
+						g(v-if="d == 'Идеализация'" )
+							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#fff" opacity="0.7" mask="url(#me)")
 							path(:d="`M ${w * 0.37} ${h / 2} L ${w / 2} ${h} L ${w * 0.63} ${h / 2} z`" fill="#000" opacity="0.7" mask="url(#me)")
 
 						g(v-if="d == 'Проекция'")
-							path(:d="`M 0 ${0} L ${w / 2} ${h / 2} L ${w} ${0} z`" fill="#fff" opacity="0.7")
+							path(:d="`M 0 ${0} L ${w / 2} ${h / 2} L ${w} ${0} z`" fill="#fff" opacity="0.7" )
 							//- path(:d="`M ${w * 0.3} ${h / 2} L ${w / 2} ${h} L ${w * 0.6} ${h / 2} z`" fill="#000" opacity="0.7" mask="url(#me)")
 
 						g(v-if="d == 'Обесценивание'")
-							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#000" opacity="0.7")
+							path(:d="`M 0 ${h} L ${w / 2} 0 L ${w} ${h} z`" fill="#000" opacity="0.7" mask="url(#me)")
 							path(:d="`M ${w * 0.37} ${h / 2} L ${w / 2} ${h} L ${w * 0.63} ${h / 2} z`" fill="#fff" opacity="0.7" mask="url(#me)")
 
 						g(v-if="d == 'Интроекция'")
@@ -157,7 +157,7 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 							path(:d="`M0 0 L ${w / 2} ${h / 2} L ${w} 0 z`" fill="#fff" opacity="0.7")
 							path(:d="`M0 ${h} L ${w / 2} ${h / 2} L ${w} ${h} z`" fill="#000" opacity="0.5")
 
-						g(v-if="d == 'Расщепленое Эго'")
+						g(v-if="d == 'Расщепление Эго'")
 							rect(:x="0" :y="h/2" :width="w" :height="h/2" fill="#fff" opacity="0.5")
 							rect(:x="0" :y="0" :width="w" :height="h/2" fill="#000" opacity="0.5")
 
@@ -201,8 +201,8 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 									path(:d="`M ${w*.3} ${-h*.075} L ${w*.7} ${-h/2} L ${w*.7} ${h/2} L ${w*.3} ${h*0.075} z`"  fill="#fff" opacity="0.5")
 
 					g(v-if="d=='Аннулирование'")
-						circle(:cx="w/2" :cy="h*.2" :r="h/8" fill="#000")
-						ellipse(:cx="w/2" :cy="h*.36" :rx="w/4" :ry="h*.33" fill="#fff" opacity="0.8")
+						circle(:cx="w/2" :cy="h*.2" :r="h/8" fill="#000" )
+						ellipse(:cx="w/2" :cy="h*.36" :rx="w/4" :ry="h*.33" fill="#fff" opacity="0.8" mask="url(#me)")
 
 					g(v-if="d=='Смещение'" mask="url(#me)")
 						path(d="M64.9,85C25.9,85.1,2.8,0,129.9,0s0,170,0,170S141.2,84.8,64.9,85z" fill="#fff" opacity="0.5")
@@ -224,7 +224,7 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 						path(:d="`M ${w*.25} ${h*.7} L ${w/2} ${h/2} L ${w*.75} ${h*.7} Z`" fill="#000" opacity="0.7" clip-path="url(#clip)")
 						path(:d="`M ${0} ${0} L ${w/2} ${h/2} L ${w} ${0} Z`" fill="#fff" opacity="0.7" )
 
-					g(v-if="d=='Отреагирование вовне'")
+					g(v-if="d=='Отыгрывание вовне'")
 						line(:x1="w/4" :y1="h*.2" :x2="w*.75" :y2="h*.8" stroke="#fff" opacity="0.3" :stroke-width="w/3")
 						circle(:cx="w/4" :cy="h*.2" :r="w/6" fill="#fff")
 						circle(:cx="w*.75" :cy="h*.8" :r="w/6" fill="#555")
