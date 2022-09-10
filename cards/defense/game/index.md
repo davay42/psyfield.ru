@@ -312,8 +312,8 @@ defenses:
 --- 
 
 Текст карточек разработан в соавторстве:
-  - [Анна Старова](https://t.me/starovanna)
-  - [Екатерина Михальская](https://t.me/mikhalska)
+  - [Анна Старова](https://instagram.com/starovanna)
+  - [Екатерина Михальская](https://instagram.com/kate.mihalska)
   - [Светлана Терновская](https://t.me/svetlana_ternovskaya)
 
 <script setup>
