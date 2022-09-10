@@ -4,15 +4,16 @@ subtitle: Психоаналитическая диагностика Нэнси
 tags: cards
 cards: true
 wiki: https://en.wikipedia.org/wiki/Defence_mechanism
+list: defenses
 ---
 
 <script setup>
 import DefenseCard from './DefenseCard.vue'
 </script>
 
-<a href="/books/defenses.pdf" download="Психология-защиты-личности.pdf">Л.Ю. Субботина, М.В. Юркова: Психология защиты личности. Учебное пособие</a>
+<a href="/books/defenses.pdf" download="Психология-защиты-личности.pdf">Л.Ю. Субботина, М.В. Юркова: Психология защиты личности. Учебное пособие - скачать</a>
 
-[Макеты карточек для вывода на печать](./print/)
+### [Карточки для практической отработки темы в группе](./game/)
 
 
 ::: card

@@ -1,7 +1,7 @@
 ---
-title: Макеты карточек по психозащитам
-subtitle: SVG-макеты для печати
-
+title: Карточки для отработки темы психозащит в группе
+subtitle: Психозащиты - описания, иллюстрации, характерные фразы
+tags: defenses
 defenses:
   Примитивные:
     
@@ -310,6 +310,11 @@ defenses:
         как меня чуть не покусала собака.
 
 --- 
+
+Текст карточек разработан в соавторстве:
+  - [Анна Старова](https://t.me/starovanna)
+  - [Екатерина Михальская](https://t.me/mikhalska)
+  - [Светлана Терновская](https://t.me/svetlana_ternovskaya)
 
 <script setup>
 import DefenseCards from './DefenseCards.vue'
