@@ -6,7 +6,7 @@ export default defineConfig({
   separator: '_',
   darkMode: 'class',
   shortcuts: {
-    bc: 'border-gray-300 dark:border-true-gray-600',
+    bc: 'border-gray-300 dark_border-true-gray-600',
   },
   plugins: [
     require('windicss/plugin/scroll-snap')

@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     CardDate: typeof import('./.vitepress/theme/components/card/date.vue')['default']
     DefenseGameDefenseCard: typeof import('./cards/defense/game/DefenseCard.vue')['default']
     DefenseGameDefenseCards: typeof import('./cards/defense/game/DefenseCards.vue')['default']
+    DefenseGameRandomRandomCard: typeof import('./cards/defense/game/random/RandomCard.vue')['default']
     DefenseGameSvgSave: typeof import('./cards/defense/game/svg-save.vue')['default']
     FlatColorIconsIdea: typeof import('~icons/flat-color-icons/idea')['default']
     FlatColorIconsMultipleInputs: typeof import('~icons/flat-color-icons/multiple-inputs')['default']

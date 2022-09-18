@@ -1,6 +1,6 @@
 <template lang="pug">
 .text-sm.rounded-full.py-1.px-2.flex.items-center
-  mdi-watering-can.mr-1.text-lg.opacity-50.text-green-800.transition(class="dark:text-green-200")
+  mdi-watering-can.mr-1.text-lg.opacity-50.text-green-800.transition(class="dark_text-green-200")
   .flex-1.font-normal {{ elapsed }}
 </template>
 
@@ -9,7 +9,7 @@ import { computed } from 'vue'
 import TimeAgo from 'javascript-time-ago'
 
 const props = defineProps({
-  date: String,
+  date: [String, Number],
 });
 
 const timeAgo = new TimeAgo('ru-RU')
