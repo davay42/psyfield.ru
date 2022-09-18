@@ -16,7 +16,6 @@ declare module '@vue/runtime-core' {
     CarbonMoon: typeof import('~icons/carbon/moon')['default']
     Card: typeof import('./.vitepress/theme/components/card/index.vue')['default']
     CardDate: typeof import('./.vitepress/theme/components/card/date.vue')['default']
-    DefenseDefenseCard: typeof import('./cards/defense/DefenseCard.vue')['default']
     DefenseGameDefenseCard: typeof import('./cards/defense/game/DefenseCard.vue')['default']
     DefenseGameDefenseCards: typeof import('./cards/defense/game/DefenseCards.vue')['default']
     DefenseGameSvgSave: typeof import('./cards/defense/game/svg-save.vue')['default']
