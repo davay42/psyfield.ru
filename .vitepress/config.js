@@ -7,7 +7,9 @@ import mdLinks from 'markdown-it-external-links'
 
 import getTags from 'vitepress-tags'
 
-const pages = getTags('./')
+const pages = getTags({
+  dir: './',
+})
 
 export default {
   title: metaData.title,
@@ -68,7 +70,7 @@ export default {
   },
   markdown: {
     config: (md) => {
-      md.use(mdClassy)
+      // md.use(mdClassy)
       md.use(mdContainer, 'card')
       md.use(mdLinks, {
         internalDomains: ['localhost', 'starovdenis.com'],
