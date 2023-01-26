@@ -10,6 +10,9 @@ import Pages from "vite-plugin-pages";
 import { extendRoutes } from "vitepress-pages";
 import generateSitemap from 'vite-plugin-pages-sitemap'
 
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 
 export default defineConfig({
   base: './',
@@ -60,6 +63,7 @@ export default defineConfig({
       exclude: ['**/node_modules/**/*.*', '**/!(index).md'],
       extensions: ['md'],
       ...extendRoutes({
+        root: path.dirname(fileURLToPath(import.meta.url)),
         mediaTypes: {}
       }),
       onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://psyfield.ru/' })),
