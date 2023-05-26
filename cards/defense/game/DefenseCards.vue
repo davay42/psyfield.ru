@@ -70,7 +70,7 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 
 	.flex.gap-2.mt-12
 		a.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark_bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(
-			href="https://github.com/davay42/psyfield.ru/blob/master/cards/defense/print/index.md?plain=1"
+			href="https://github.com/davay42/psyfield.ru/tree/master/cards/defense/game"
 			target="_blank"
 			)
 			la-github.text-2xl

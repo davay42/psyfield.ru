@@ -52,3 +52,4 @@ wiki/
 package.json
 
 public/sitemap.xml
+.vitepress/cache

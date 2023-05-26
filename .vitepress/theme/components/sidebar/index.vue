@@ -20,7 +20,7 @@ defineProps({
   bottom: 0;
   left: 0; */
   z-index: var(--z-index-sidebar);
-  width: 16.4rem;
+  width: 12.4rem;
   background-color: var(--c-bg);
   overflow-y: auto;
   transform: translateX(-100%);
@@ -37,7 +37,7 @@ defineProps({
 
 @media (min-width: 960px) {
   .sidebar {
-    width: auto;
+    @apply max-w-80 w-auto;
   }
 }
 

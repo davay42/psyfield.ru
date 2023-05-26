@@ -1,4 +1,5 @@
-import "virtual:windi.css";
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
 
 import { MotionPlugin } from "@vueuse/motion";
 
@@ -38,7 +39,7 @@ const theme = {
         window.owa_baseUrl =
           "https:" == document.location.protocol
             ? window.owa_baseSecUrl ||
-              window.owa_baseUrl.replace(/http:/, "https:")
+            window.owa_baseUrl.replace(/http:/, "https:")
             : window.owa_baseUrl;
         _owa.src =
           window.owa_baseUrl + "modules/base/js/owa.tracker-combined-min.js";

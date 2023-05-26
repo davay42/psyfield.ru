@@ -18,7 +18,8 @@
 		"paper": "0.12.17",
 		"vue": "3.3.4",
 		"vue-demi": "^0.14.5",
-		"wrap-svg-text": "^0.0.7"
+		"wrap-svg-text": "^0.0.7",
+		"@unocss/reset": "^0.52.3"
 	},
 	"devDependencies": {
 		"@iconify/json": "2.2.70",
@@ -41,6 +42,7 @@
 		"vitepress": "1.0.0-beta.1",
 		"vitepress-pages": "1.0.5",
 		"vitepress-tags": "0.6.5",
-		"windicss": "3.5.6"
+		"unocss": "0.52.3",
+		"@unocss/extractor-pug": "0.52.3"
 	}
 }
