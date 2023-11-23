@@ -2,7 +2,7 @@ import { metaData } from "./constants.js";
 
 const head = [
 
-  ["script", { async: true, defer: true, "data-website-id": "d92c18c9-061a-49b8-b691-7c3343c8b398", src: "https://stats.defucc.me/umami.js" }],
+  ["script", { async: true, defer: true, "data-website-id": "55ea7113-8293-4c8c-a064-295e8b6cb4c9", src: "https://stat.defucc.me/script.js" }],
 
   ["meta", { name: "author", content: metaData?.author }],
   ["meta", { name: "keywords", content: metaData?.tags }],
