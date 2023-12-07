@@ -53,3 +53,4 @@ package.json
 
 public/sitemap.xml
 .vitepress/cache
+dist

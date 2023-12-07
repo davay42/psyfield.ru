@@ -5,20 +5,14 @@ import IconsResolver from 'unplugin-icons/resolver'
 import AutoImport from 'unplugin-auto-import/vite'
 import ViteYaml from '@modyfi/vite-plugin-yaml';
 
-import Pages from "vite-plugin-pages";
-import { extendRoutes } from "vitepress-pages";
-import generateSitemap from 'vite-plugin-pages-sitemap'
-
 import Unocss from 'unocss/vite'
 import { transformerDirectives, presetIcons, presetUno, extractorSplit } from 'unocss'
 import extractorPug from '@unocss/extractor-pug'
 
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+
 
 
 export default defineConfig({
-  base: './',
   plugins: [
     ViteYaml(),
     AutoImport({
@@ -64,6 +58,7 @@ export default defineConfig({
       ],
       presets: [
         presetIcons({
+          cdn: 'https://esm.sh/',
           scale: 1.2,
           extraProperties: {
             'vertical-align': 'middle'
@@ -75,18 +70,6 @@ export default defineConfig({
         extractorSplit,
         extractorPug()
       ]
-    }),
-    Pages({
-      dirs: [
-        { dir: ".", baseRoute: "." },
-      ],
-      exclude: ['**/node_modules/**/*.*', '**/!(index).md'],
-      extensions: ['md'],
-      ...extendRoutes({
-        root: path.dirname(fileURLToPath(import.meta.url)),
-        mediaTypes: {}
-      }),
-      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://psyfield.ru/' })),
     }),
   ],
 

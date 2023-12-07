@@ -1,5 +1,5 @@
 ---
-home: true
+layout: home
 
 title: Собрание карт сознания
 
@@ -13,4 +13,21 @@ altActionLink: /support
 
 heroImage: /assets/logo-color.svg
 heroAlt: Психологическое поле
+
+hero:
+  name: Психологическое поле
+  text: Собрание карт сознания
+  tagline: Lorem ipsum...
+  image:
+    src: /assets/logo-color.svg
+    alt: Psyfield
+  actions:
+    - theme: brand
+      text: Войти
+      link: /field/
+    - theme: alt
+      text: Поддержать
+      link: /support
 ---
+
+
