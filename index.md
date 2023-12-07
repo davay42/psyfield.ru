@@ -28,6 +28,17 @@ hero:
     - theme: alt
       text: Поддержать
       link: /support
+
+features:
+  - icon: 🛠️
+    title: Simple and minimal, always
+    details: Lorem ipsum...
+  - icon: ✨
+    title: Another cool feature
+    details: Lorem ipsum...
+  - icon: ⚡️ 
+    title: Another cool feature
+    details: Lorem ipsum...
 ---
 
 

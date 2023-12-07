@@ -44,7 +44,7 @@ export default {
       includeEmptyFolder: true,
       folderLinkNotIncludesFileName: true,
       excludeFolders: ['public', 'node_modules'],
-      excludeFiles: ['README.md']
+      excludeFiles: ['README.md', 'index.md']
     })
   },
   markdown: {
