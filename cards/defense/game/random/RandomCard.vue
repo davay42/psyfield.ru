@@ -33,7 +33,7 @@ const level = computed(() => arr[0][d.value] ? 'Примитивные' : 'Вт�
 	
 
 <template lang='pug'>
-button.p-4.bg-light-800.dark_bg-dark-800.rounded-xl.shadow-xl.m-4(v-on:click="randomNum()") Вытянуть карту
+button.p-4.bg-light-800.dark-bg-dark-800.rounded-xl.shadow-xl.m-4(v-on:click="randomNum()") Вытянуть карту
 transition(name="fade", mode="out-in")
 	DefenseCard(:d="d", :def="defense", :level="level", :key="d")
 ul.pl-0.mt-16.flex.flex-col.gap-1

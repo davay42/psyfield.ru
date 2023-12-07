@@ -7,7 +7,7 @@
       .mt-4 
         span.font-bold {{ level?.subject }}: 
         span «{{ level?.motto }}»
-    .p-4.flex-1.flex.flex-col.bg-warm-gray-50(class="dark_bg-warm-gray-700")
+    .p-4.flex-1.flex.flex-col.bg-warm-gray-50(class="dark-bg-warm-gray-700")
       .flex.flex-1.mb-2.items-center.py-1(v-for="challenge in level.challenges", :key="challenge") {{ challenge }} 
 </template>
 
@@ -114,6 +114,4 @@ const lev = [
 
 </script>
 
-<style lang="postcss" scoped>
-
-</style>
+<style lang="postcss" scoped></style>

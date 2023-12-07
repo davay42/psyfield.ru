@@ -69,13 +69,13 @@ function downloadFile(text, fileType, fileName, isBlob = true) {
 			DefenseCard(v-for="(def, d) in defs" :key="d" :level="level" :def="def" :d="d")
 
 	.flex.gap-2.mt-12
-		a.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark_bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(
+		a.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark-bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(
 			href="https://github.com/davay42/psyfield.ru/tree/master/cards/defense/game"
 			target="_blank"
 			)
 			la-github.text-2xl
 			.text-lg Исходный код
-		.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark_bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(@click="saveAll()")
+		.flex.gap-2.items-center.text-current.p-2.m-2.bg-light-600.dark-bg-dark-50.rounded-xl.shadow-xl.cursor-pointer(@click="saveAll()")
 			la-save.text-2xl
 			.text-lg Скачать
 

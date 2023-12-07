@@ -38,20 +38,20 @@
       tr.font-bold.text-lg.sticky.top-0.z-2
         th Название
 
-        td.bg-light-blue-300(class="dark_bg-blue-900") Наблюдатель
-        td.bg-pink-300(class="dark_bg-pink-900") Властелин
-        td.bg-amber-300(class="dark_bg-amber-900")  Звезда
-        td.bg-green-300(class="dark_bg-green-900") Эстет
+        td.bg-light-blue-300(class="dark-bg-blue-900") Наблюдатель
+        td.bg-pink-300(class="dark-bg-pink-900") Властелин
+        td.bg-amber-300(class="dark-bg-amber-900")  Звезда
+        td.bg-green-300(class="dark-bg-green-900") Эстет
         td
-        td.bg-light-blue-200(class="dark_bg-blue-800")  Хозяин
-        td.bg-pink-200(class="dark_bg-pink-800") Законодатель
-        td.bg-amber-200(class="dark_bg-amber-800")  Принц
-        td.bg-green-200(class="dark_bg-green-800") Служитель
+        td.bg-light-blue-200(class="dark-bg-blue-800")  Хозяин
+        td.bg-pink-200(class="dark-bg-pink-800") Законодатель
+        td.bg-amber-200(class="dark-bg-amber-800")  Принц
+        td.bg-green-200(class="dark-bg-green-800") Служитель
         td
-        td.bg-light-blue-100(class="dark_bg-blue-700")  Детектив
-        td.bg-pink-100(class="dark_bg-pink-700") Идеолог
-        td.bg-amber-100(class="dark_bg-amber-700") Революционер
-        td.bg-green-100(class="dark_bg-green-700") Философ
+        td.bg-light-blue-100(class="dark-bg-blue-700")  Детектив
+        td.bg-pink-100(class="dark-bg-pink-700") Идеолог
+        td.bg-amber-100(class="dark-bg-amber-700") Революционер
+        td.bg-green-100(class="dark-bg-green-700") Философ
 
       tr.font-bold
         th Психотип
@@ -167,10 +167,10 @@
 
 <style lang="postcss" scoped>
 th {
-  @apply sticky left-0 text-right font-bold bg-white text-sm dark_bg-warm-gray-700;
+  @apply sticky left-0 text-right font-bold bg-white text-sm dark-bg-warm-gray-700;
 }
 
 tr:nth-child(2n) th {
-  @apply bg-gray-50 dark_bg-warm-gray-600;
+  @apply bg-gray-50 dark-bg-warm-gray-600;
 }
 </style>
