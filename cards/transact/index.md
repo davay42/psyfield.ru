@@ -1,6 +1,6 @@
 ---
 title: Транзактный анализ
-subtitle: Эрик Берн
+description: Эрик Берн
 tags: cards
 cards: true
 ---

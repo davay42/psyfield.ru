@@ -1,6 +1,6 @@
 <template lang="pug">
-.my-8.flex
-  .text-4xl.mr-4 {{ emotion?.icon }}
+.card.my-8.flex.relative
+  .text-8xl.mr-4.absolute.right-2.top-2 {{ emotion?.icon }}
   .info
     .text-lg.font-bold.mb-2 {{ emotion?.title }}
     .q Стимул: 

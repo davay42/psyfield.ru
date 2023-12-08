@@ -1,6 +1,6 @@
 ---
 title: Интегральный подход
-subtitle: Кен Уилбер
+description: Кен Уилбер
 tags: cards
 quadrants:
   - lr: Внутреннее

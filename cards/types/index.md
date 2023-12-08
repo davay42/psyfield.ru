@@ -1,6 +1,6 @@
 ---
 title: Психотипическая адаптация личности
-subtitle: Юлия Зотова
+description: Юлия Зотова
 tags: cards
 cards: true
 ---

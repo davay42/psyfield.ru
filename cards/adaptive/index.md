@@ -1,6 +1,6 @@
 ---
 title: Адаптационная теория эмоций
-subtitle: Роберт Плутчик
+description: Роберт Плутчик
 tags: cards
 basic:
   - title: Инкорпорация
@@ -63,15 +63,11 @@ basic:
 
 Теория разрабатывалась Робертом Плутчиком в виде монографии в 1962 году. Она получила международное признание и использовалась для раскрытия структуры групповых процессов, позволила сформировать представление о внутриличностных процессах и механизмах психологических защит. В настоящее время основные постулаты теории включены в известные психотерапевтические направления и психодиагностические системы.
 
-:::card
-
-## Эмоции — это механизмы коммуникации и выживания, основанные на эволюционной адаптации.
+## Эмоции — это механизмы коммуникации и выживания, основанные на эволюционной адаптации
 
 Они сохраняются в функционально эквивалентных формах через все филогенетические уровни
 
 <adaptive-main v-for="(emotion, id) in $frontmatter.basic" :key="emotion.title" :emotion="emotion" :id="id" />
-
-:::
 
 ::: card
 
@@ -104,6 +100,5 @@ basic:
 ![](./cone.png)
 
 :::
-
 
 Robert Plutchik's (1979) theory views defences as derivatives of basic emotions, which in turn relate to particular diagnostic structures. According to his theory, reaction formation relates to joy (and manic features), denial relates to acceptance (and histrionic features), repression to fear (and passivity), regression to surprise (and borderline traits), compensation to sadness (and depression), projection to disgust (and paranoia), displacement to anger (and hostility) and intellectualization to anticipation (and obsessionality).

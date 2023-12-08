@@ -1,6 +1,6 @@
 ---
 title: "НЛП: Нейролингвистическое программирование"
-subtitle: Грегори Бейтсон
+description: Грегори Бейтсон
 tags: cards
 cards: true
 ---

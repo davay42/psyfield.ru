@@ -44,7 +44,9 @@ export default {
       includeEmptyFolder: true,
       folderLinkNotIncludesFileName: true,
       excludeFolders: ['public', 'node_modules'],
-      excludeFiles: ['README.md', 'index.md']
+      excludeFiles: ['README.md', 'index.md'],
+      sortMenusByFrontmatterOrder: true,
+      manualSortFileNameByPriority: ['/field/index.md', '/cards/index.md']
     })
   },
   markdown: {

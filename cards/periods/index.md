@@ -1,7 +1,7 @@
 ---
 title: Периодизация психического развития ребенка 
 tags: cards
-subtitle: Д. Б. Эльконин
+description: Д. Б. Эльконин
 epochs:
   - title: Раннее детство
     age: 0 – 3 года
