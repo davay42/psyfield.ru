@@ -5,11 +5,16 @@ import { generateSidebar } from 'vitepress-sidebar';
 
 import mdContainer from 'markdown-it-container'
 
-export default {
+import { defineConfig } from 'vitepress';
+
+export default defineConfig({
   title: metaData.title,
   description: metaData.description,
   lang: metaData.locale,
   head,
+  sitemap: {
+    hostname: metaData.site
+  },
   themeConfig: {
     repo: 'davay42/psyfield.ru',
     logo: '/assets/s-exp.svg',
@@ -54,4 +59,4 @@ export default {
       md.use(mdContainer, 'card')
     },
   },
-}
+})
