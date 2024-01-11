@@ -16,6 +16,7 @@ links:
 - [Values in action scale and the Big 5. An empirical indication of structure](/books/MacdonaldBoreMunro2009.pdf)
 - [Character Strengths Interventions. A Field Guide for Practitioners. Ryan M. Niemiec](/books/ryan-niemiec-character-strengths-interventions-a-field-guide-for-practitioners-2017.pdf)
 - [Character Strengths and Virtues. A Handbook and Classification. CHRISTOPHER PETERSON, MARTIN E. P. SELIGMAN](/books/character-strengths-and-virtues.pdf)
+
 https://posproject.org/character-strengths/
 
 ![character](./what-is-character-venn-diagram.png)
