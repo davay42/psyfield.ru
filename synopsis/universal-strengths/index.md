@@ -16,6 +16,32 @@ links:
 - [Values in action scale and the Big 5. An empirical indication of structure](/books/MacdonaldBoreMunro2009.pdf)
 - [Character Strengths Interventions. A Field Guide for Practitioners. Ryan M. Niemiec](/books/ryan-niemiec-character-strengths-interventions-a-field-guide-for-practitioners-2017.pdf)
 - [Character Strengths and Virtues. A Handbook and Classification. CHRISTOPHER PETERSON, MARTIN E. P. SELIGMAN](/books/character-strengths-and-virtues.pdf)
+https://posproject.org/character-strengths/
+
+![character](./what-is-character-venn-diagram.png)
+
+## What is Character?
+
+Character is more than simply individual achievement. It’s the intersection of our thoughts, our feelings, and our behaviors. Character is the aggregate of who we are; it’s “what’s inside every one of us.”
+
+Character is not fixed; it can be grown. This is very similar to Dr. Carol Dweck’s growth mindset. Dweck’s theory explains that some people think their abilities are fixed and that any failure is a confirmation of their limits. While other people believe that they can grow their abilities and that failure is just a stepping stone to improvement.
+
+Well, character works the same way. And, there is no endpoint to developing your character. It’s a lifelong endeavor for every single one of us.
+
+And, as Dr. Peterson wrote, focusing on character strengths “would not only make young people happier, healthier, and more socially connected but also help them do better at school and to be more productive at their eventual work. Attention to young people’s character is not a luxury for our society but a necessity, and it requires no tradeoff with traditional academic goals.”
+Difference Between Character Strengths and Values
+
+Are character strengths the same as values? Not necessarily. Character strengths are positive personality traits that reflect our basic identity — and produce positive outcomes for ourselves and others. However, as Dr. Peterson explains in A Primer in Positive Psychology, “Values are beliefs held by individuals and shared by groups about desirable ends…they guide how we select actions and evaluate others and ourselves; and they are ordered by their relative importance.” Therefore, individuals use their character strengths to move toward their specific values.
+
+For example, the core values of the United States Military Academy at West Point are Duty, Honor, Country. Cadets will use their individual character strengths — such as perseverance, teamwork, and self-control — to move towards those values. As General MacArthur explained to cadets in 1962, “Duty, honor, country: Those three hallowed words reverently dictate what you ought to be, what you can be, what you will be. They are your rallying point to build courage when courage seems to fail, to regain faith when there seems to be little cause for faith, to create hope when hope becomes forlorn.”
+
+## What Is Positive Psychology?
+
+Positive psychology is a rigorous academic field that encompasses character strengths, positive relationships, positive experiences, and positive institutions. It is the scientific study of what makes life most worth living — and maintains that what is good in life is as genuine as what is bad.
+
+Although positive psychology focuses on what goes right in life, it doesn’t ignore what goes wrong. As Drs. Peterson and Seligman wrote in Character Strengths and Virtues, “There is a temptation to regard positive psychology as focusing on the stress-free individual, but this is a mistake… In accentuating the positive, we cannot ignore the negative. Conditions of adversity, whether external or internal, must be part of what we address in discussing character strengths.”
+
+-------------;
 
 ## A Closer Look at the 24 Strengths
 
@@ -366,30 +392,3 @@ The research suggests that transcendence (eg. gratitude, meaning, and hope) pred
 VIA Character Strengths Youth Survey
 
 Parents, educators, and researchers have requested the VIA: institute on character strengths to develop a VIA survey that is especially aimed at youths. Take the VIA psychometric data – youth survey if you are between the ages of 10-17.
-
------------;
-
-https://posproject.org/character-strengths/
-
-![character](./what-is-character-venn-diagram.png)
-
-## What is Character?
-
-Character is more than simply individual achievement. It’s the intersection of our thoughts, our feelings, and our behaviors. Character is the aggregate of who we are; it’s “what’s inside every one of us.”
-
-Character is not fixed; it can be grown. This is very similar to Dr. Carol Dweck’s growth mindset. Dweck’s theory explains that some people think their abilities are fixed and that any failure is a confirmation of their limits. While other people believe that they can grow their abilities and that failure is just a stepping stone to improvement.
-
-Well, character works the same way. And, there is no endpoint to developing your character. It’s a lifelong endeavor for every single one of us.
-
-And, as Dr. Peterson wrote, focusing on character strengths “would not only make young people happier, healthier, and more socially connected but also help them do better at school and to be more productive at their eventual work. Attention to young people’s character is not a luxury for our society but a necessity, and it requires no tradeoff with traditional academic goals.”
-Difference Between Character Strengths and Values
-
-Are character strengths the same as values? Not necessarily. Character strengths are positive personality traits that reflect our basic identity — and produce positive outcomes for ourselves and others. However, as Dr. Peterson explains in A Primer in Positive Psychology, “Values are beliefs held by individuals and shared by groups about desirable ends…they guide how we select actions and evaluate others and ourselves; and they are ordered by their relative importance.” Therefore, individuals use their character strengths to move toward their specific values.
-
-For example, the core values of the United States Military Academy at West Point are Duty, Honor, Country. Cadets will use their individual character strengths — such as perseverance, teamwork, and self-control — to move towards those values. As General MacArthur explained to cadets in 1962, “Duty, honor, country: Those three hallowed words reverently dictate what you ought to be, what you can be, what you will be. They are your rallying point to build courage when courage seems to fail, to regain faith when there seems to be little cause for faith, to create hope when hope becomes forlorn.”
-
-## What Is Positive Psychology?
-
-Positive psychology is a rigorous academic field that encompasses character strengths, positive relationships, positive experiences, and positive institutions. It is the scientific study of what makes life most worth living — and maintains that what is good in life is as genuine as what is bad.
-
-Although positive psychology focuses on what goes right in life, it doesn’t ignore what goes wrong. As Drs. Peterson and Seligman wrote in Character Strengths and Virtues, “There is a temptation to regard positive psychology as focusing on the stress-free individual, but this is a mistake… In accentuating the positive, we cannot ignore the negative. Conditions of adversity, whether external or internal, must be part of what we address in discussing character strengths.”
