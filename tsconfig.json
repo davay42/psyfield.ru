@@ -24,7 +24,7 @@
     "allowJs": true
   },
   "include": [
-    ".vitepress/**/*.ts",
+    ".vitepress/**/*.js",
   ],
   "exclude": [
     "**/dist/**"
