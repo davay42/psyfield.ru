@@ -209,6 +209,12 @@ date: 2021-12-05
 
 Эмоциональный ноль = ПОКОЙ
 
-## Источники
+---
+
+#### Источник
 
 [psychojournal.ru](https://psychojournal.ru/article/145-adaptacionnaya-teoriya-emociy-roberta-plutchika.html)
+
+#### Автор статьи
+
+[Максим Величко](https://hypnotherapy.by/specialist/maksim-velichko)
